@@ -1,0 +1,1015 @@
+@relation 'datasets_45152_82501_insurance_claims-weka.filters.unsupervised.attribute.Remove-R40-weka.filters.unsupervised.attribute.Remove-R3-4,18,24-25-weka.filters.unsupervised.attribute.ReplaceMissingValues-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.InfoGainAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 10'
+
+@attribute incident_severity {'Major Damage','Minor Damage','Total Loss','Trivial Damage'}
+@attribute insured_hobbies {sleeping,reading,board-games,bungie-jumping,base-jumping,golf,camping,dancing,skydiving,movies,hiking,yachting,paintball,chess,kayaking,polo,basketball,video-games,cross-fit,exercise}
+@attribute auto_model {92x,E400,RAM,Tahoe,RSX,95,Pathfinder,A5,Camry,F150,A3,Highlander,Neon,MDX,Maxima,Legacy,TL,Impreza,Forrestor,Escape,Corolla,'3 Series',C300,Wrangler,M5,X5,Civic,Passat,Silverado,CRV,93,Accord,X6,Malibu,Fusion,Jetta,ML350,Ultima,'Grand Cherokee'}
+@attribute vehicle_claim numeric
+@attribute total_claim_amount numeric
+@attribute incident_type {'Single Vehicle Collision','Vehicle Theft','Multi-vehicle Collision','Parked Car'}
+@attribute authorities_contacted {Police,None,Fire,Other,Ambulance}
+@attribute property_claim numeric
+@attribute injury_claim numeric
+@attribute insured_occupation {craft-repair,machine-op-inspct,sales,armed-forces,tech-support,prof-specialty,other-service,priv-house-serv,exec-managerial,protective-serv,transport-moving,handlers-cleaners,adm-clerical,farming-fishing}
+@attribute fraud_reported {Y,N}
+
+@data
+'Major Damage',sleeping,92x,52080,71610,'Single Vehicle Collision',Police,13020,6510,craft-repair,Y
+'Minor Damage',reading,E400,3510,5070,'Vehicle Theft',Police,780,780,machine-op-inspct,Y
+'Minor Damage',board-games,RAM,23100,34650,'Multi-vehicle Collision',Police,3850,7700,sales,N
+'Major Damage',board-games,Tahoe,50720,63400,'Single Vehicle Collision',Police,6340,6340,armed-forces,Y
+'Minor Damage',board-games,RSX,4550,6500,'Vehicle Theft',None,650,1300,sales,N
+'Major Damage',bungie-jumping,95,51280,64100,'Multi-vehicle Collision',Fire,6410,6410,tech-support,Y
+'Minor Damage',board-games,Pathfinder,50050,78650,'Multi-vehicle Collision',Police,7150,21450,prof-specialty,N
+'Total Loss',base-jumping,A5,32830,51590,'Multi-vehicle Collision',Police,9380,9380,tech-support,N
+'Total Loss',golf,Camry,22160,27700,'Single Vehicle Collision',Police,2770,2770,other-service,N
+'Total Loss',camping,92x,32900,42300,'Single Vehicle Collision',Other,4700,4700,priv-house-serv,N
+'Total Loss',dancing,F150,63280,87010,'Single Vehicle Collision',Police,15820,7910,exec-managerial,N
+'Major Damage',skydiving,A3,79560,114920,'Multi-vehicle Collision',Fire,17680,17680,exec-managerial,N
+'Total Loss',reading,95,42390,56520,'Single Vehicle Collision',Ambulance,9420,4710,protective-serv,N
+'Minor Damage',bungie-jumping,Highlander,5040,7280,'Parked Car',None,1120,1120,armed-forces,N
+'Total Loss',board-games,Neon,33600,46200,'Single Vehicle Collision',Police,8400,4200,machine-op-inspct,Y
+'Major Damage',movies,MDX,42080,63120,'Multi-vehicle Collision',Other,10520,10520,transport-moving,Y
+'Major Damage',hiking,Maxima,40530,52110,'Multi-vehicle Collision',Other,5790,5790,machine-op-inspct,N
+'Total Loss',reading,Legacy,56640,77880,'Single Vehicle Collision',Police,7080,14160,machine-op-inspct,N
+'Total Loss',yachting,TL,53040,72930,'Single Vehicle Collision',Other,13260,6630,craft-repair,N
+'Major Damage',camping,Pathfinder,48320,60400,'Multi-vehicle Collision',Police,6040,6040,handlers-cleaners,N
+'Minor Damage',bungie-jumping,Impreza,41920,47160,'Multi-vehicle Collision',Police,5240,0,other-service,N
+'Total Loss',skydiving,RSX,33110,37840,'Multi-vehicle Collision',Police,4730,0,machine-op-inspct,N
+'Major Damage',paintball,Forrestor,47680,71520,'Multi-vehicle Collision',Ambulance,5960,17880,prof-specialty,Y
+'Total Loss',chess,RAM,73620,98160,'Single Vehicle Collision',Ambulance,16360,8180,priv-house-serv,Y
+'Minor Damage',kayaking,Escape,56640,77880,'Single Vehicle Collision',Other,14160,7080,craft-repair,N
+'Major Damage',polo,Escape,44000,71500,'Multi-vehicle Collision',Other,11000,16500,sales,Y
+'Minor Damage',golf,Camry,6560,9020,'Parked Car',Police,820,1640,prof-specialty,N
+'Minor Damage',chess,Forrestor,4160,5720,'Vehicle Theft',None,520,1040,exec-managerial,Y
+'Minor Damage',kayaking,Neon,46560,69840,'Single Vehicle Collision',Other,15520,7760,sales,N
+'Minor Damage',basketball,TL,63450,91650,'Single Vehicle Collision',Police,14100,14100,machine-op-inspct,N
+'Major Damage',video-games,Corolla,50400,75600,'Multi-vehicle Collision',Ambulance,12600,12600,prof-specialty,N
+'Major Damage',reading,F150,52220,67140,'Multi-vehicle Collision',Police,7460,7460,craft-repair,Y
+'Total Loss',yachting,'3 Series',23170,29790,'Multi-vehicle Collision',Police,3310,3310,adm-clerical,N
+'Major Damage',video-games,Impreza,49070,77110,'Multi-vehicle Collision',Ambulance,14020,14020,farming-fishing,N
+'Total Loss',yachting,A3,48600,64800,'Single Vehicle Collision',Fire,5400,10800,prof-specialty,N
+'Major Damage',reading,C300,37170,53100,'Single Vehicle Collision',Other,5310,10620,craft-repair,Y
+'Total Loss',camping,Forrestor,48160,60200,'Single Vehicle Collision',Police,6020,6020,protective-serv,Y
+'Minor Damage',golf,Legacy,3280,5330,'Parked Car',None,820,1230,priv-house-serv,N
+'Major Damage',bungie-jumping,Wrangler,43610,62300,'Multi-vehicle Collision',Police,6230,12460,craft-repair,N
+'Major Damage',video-games,Pathfinder,38290,60170,'Single Vehicle Collision',Ambulance,10940,10940,tech-support,Y
+'Minor Damage',kayaking,M5,28000,40000,'Single Vehicle Collision',Ambulance,4000,8000,tech-support,N
+'Major Damage',chess,X5,64720,97080,'Single Vehicle Collision',Police,16180,16180,transport-moving,Y
+'Minor Damage',hiking,RAM,40180,51660,'Multi-vehicle Collision',Other,5740,5740,prof-specialty,N
+'Total Loss',reading,E400,39760,51120,'Single Vehicle Collision',Other,5680,5680,transport-moving,N
+'Minor Damage',reading,Highlander,33840,56400,'Single Vehicle Collision',Other,11280,11280,priv-house-serv,N
+'Total Loss',yachting,MDX,48230,55120,'Multi-vehicle Collision',Other,0,6890,protective-serv,N
+'Total Loss',polo,Civic,63090,77110,'Multi-vehicle Collision',Fire,14020,0,other-service,N
+'Major Damage',kayaking,A3,50240,62800,'Multi-vehicle Collision',Fire,6280,6280,other-service,Y
+'Trivial Damage',dancing,Passat,5670,7290,'Vehicle Theft',Police,810,810,protective-serv,N
+'Total Loss',movies,C300,53620,76600,'Single Vehicle Collision',Other,7660,15320,exec-managerial,N
+'Minor Damage',bungie-jumping,Pathfinder,57260,81800,'Multi-vehicle Collision',Fire,8180,16360,other-service,N
+'Trivial Damage',polo,M5,5280,7260,'Vehicle Theft',None,660,1320,farming-fishing,N
+'Minor Damage',basketball,Corolla,3440,4300,'Vehicle Theft',None,430,430,armed-forces,N
+'Major Damage',movies,Forrestor,44870,70510,'Multi-vehicle Collision',Police,12820,12820,priv-house-serv,N
+'Minor Damage',movies,F150,1680,2640,'Parked Car',Police,480,480,machine-op-inspct,N
+'Minor Damage',skydiving,Silverado,55230,78900,'Single Vehicle Collision',Fire,7890,15780,craft-repair,N
+'Major Damage',chess,CRV,50160,56430,'Multi-vehicle Collision',Fire,6270,0,prof-specialty,N
+'Minor Damage',hiking,Silverado,1800,2400,'Parked Car',None,300,300,adm-clerical,N
+'Total Loss',yachting,93,51170,65790,'Single Vehicle Collision',Ambulance,7310,7310,other-service,N
+'Minor Damage',kayaking,Escape,45760,62920,'Multi-vehicle Collision',Police,5720,11440,adm-clerical,N
+'Major Damage',base-jumping,Maxima,54040,69480,'Multi-vehicle Collision',Police,0,15440,machine-op-inspct,Y
+'Total Loss',basketball,Accord,33210,44280,'Multi-vehicle Collision',Other,3690,7380,handlers-cleaners,N
+'Minor Damage',bungie-jumping,M5,39410,56300,'Single Vehicle Collision',Other,11260,5630,armed-forces,N
+'Major Damage',video-games,Legacy,51390,68520,'Multi-vehicle Collision',Fire,5710,11420,transport-moving,Y
+'Total Loss',chess,Escape,45990,59130,'Multi-vehicle Collision',Fire,6570,6570,sales,Y
+'Minor Damage',chess,Neon,61740,82320,'Multi-vehicle Collision',Ambulance,6860,13720,exec-managerial,Y
+'Minor Damage',paintball,A5,62100,89700,'Single Vehicle Collision',Fire,13800,13800,tech-support,Y
+'Minor Damage',reading,X6,30160,33930,'Multi-vehicle Collision',Fire,3770,0,adm-clerical,N
+'Major Damage',movies,A5,49840,68530,'Single Vehicle Collision',Ambulance,6230,12460,machine-op-inspct,N
+'Minor Damage',kayaking,F150,2580,4300,'Parked Car',None,860,860,other-service,N
+'Major Damage',sleeping,A3,49680,68310,'Multi-vehicle Collision',Other,6210,12420,prof-specialty,Y
+'Total Loss',cross-fit,Civic,47670,61290,'Single Vehicle Collision',Other,6810,6810,armed-forces,Y
+'Minor Damage',paintball,Malibu,27090,30100,'Single Vehicle Collision',Ambulance,0,3010,sales,N
+'Minor Damage',golf,C300,42840,57120,'Multi-vehicle Collision',Fire,4760,9520,transport-moving,N
+'Minor Damage',yachting,X6,28620,42930,'Multi-vehicle Collision',Ambulance,4770,9540,sales,N
+'Total Loss',bungie-jumping,Fusion,34140,51210,'Multi-vehicle Collision',Ambulance,5690,11380,transport-moving,N
+'Minor Damage',golf,Legacy,67050,89400,'Multi-vehicle Collision',Fire,7450,14900,handlers-cleaners,N
+'Total Loss',dancing,A3,38010,59730,'Multi-vehicle Collision',Police,10860,10860,transport-moving,N
+'Minor Damage',kayaking,95,5580,8060,'Vehicle Theft',None,1240,1240,other-service,N
+'Major Damage',polo,M5,50540,72200,'Single Vehicle Collision',Fire,7220,14440,handlers-cleaners,Y
+'Minor Damage',paintball,MDX,30480,50800,'Multi-vehicle Collision',Ambulance,10160,10160,exec-managerial,N
+'Trivial Damage',video-games,TL,4620,6600,'Vehicle Theft',None,1320,660,exec-managerial,N
+'Minor Damage',bungie-jumping,Maxima,5250,7500,'Vehicle Theft',Police,1500,750,other-service,N
+'Trivial Damage',video-games,Jetta,4130,6490,'Vehicle Theft',None,1180,1180,exec-managerial,N
+'Major Damage',movies,A3,44320,60940,'Multi-vehicle Collision',Ambulance,11080,5540,prof-specialty,Y
+'Major Damage',board-games,Legacy,40810,58300,'Multi-vehicle Collision',Fire,11660,5830,transport-moving,N
+'Minor Damage',yachting,F150,45600,68400,'Multi-vehicle Collision',Other,11400,11400,priv-house-serv,N
+'Total Loss',yachting,'3 Series',40880,64240,'Single Vehicle Collision',Fire,11680,11680,other-service,N
+'Trivial Damage',kayaking,Neon,3290,4700,'Parked Car',None,470,940,prof-specialty,N
+'Major Damage',exercise,MDX,39480,45120,'Multi-vehicle Collision',Other,5640,0,exec-managerial,Y
+'Total Loss',board-games,93,46350,66950,'Multi-vehicle Collision',Fire,10300,10300,sales,N
+'Major Damage',exercise,Accord,71520,98340,'Single Vehicle Collision',Police,17880,8940,tech-support,Y
+'Trivial Damage',yachting,X5,4720,5900,'Parked Car',None,590,590,farming-fishing,N
+'Major Damage',exercise,Fusion,53010,70680,'Multi-vehicle Collision',Ambulance,11780,5890,exec-managerial,N
+'Total Loss',hiking,ML350,68160,93720,'Multi-vehicle Collision',Ambulance,8520,17040,machine-op-inspct,N
+'Minor Damage',exercise,Highlander,5040,6930,'Vehicle Theft',None,630,1260,armed-forces,N
+'Major Damage',hiking,RAM,59670,72930,'Single Vehicle Collision',Fire,6630,6630,protective-serv,Y
+'Minor Damage',skydiving,Pathfinder,50470,64890,'Multi-vehicle Collision',Other,7210,7210,farming-fishing,Y
+'Trivial Damage',kayaking,95,3600,5400,'Parked Car',None,900,900,machine-op-inspct,N
+'Trivial Damage',reading,A3,4200,5600,'Vehicle Theft',None,700,700,exec-managerial,N
+'Minor Damage',yachting,92x,47580,79300,'Single Vehicle Collision',Police,15860,15860,protective-serv,N
+'Major Damage',exercise,95,36960,52800,'Single Vehicle Collision',Police,5280,10560,tech-support,N
+'Minor Damage',bungie-jumping,Fusion,25200,28800,'Multi-vehicle Collision',Fire,3600,0,prof-specialty,N
+'Minor Damage',kayaking,Highlander,2310,2970,'Parked Car',Police,330,330,tech-support,N
+'Total Loss',basketball,Malibu,70110,93480,'Multi-vehicle Collision',Police,7790,15580,other-service,N
+'Minor Damage',kayaking,E400,3360,4320,'Vehicle Theft',None,480,480,prof-specialty,N
+'Major Damage',basketball,95,53200,79800,'Multi-vehicle Collision',Police,19950,6650,prof-specialty,Y
+'Major Damage',camping,Passat,51940,74200,'Multi-vehicle Collision',Ambulance,14840,7420,handlers-cleaners,N
+'Major Damage',basketball,93,48870,70590,'Single Vehicle Collision',Fire,10860,10860,machine-op-inspct,Y
+'Major Damage',chess,Ultima,44320,60940,'Multi-vehicle Collision',Fire,11080,5540,sales,Y
+'Minor Damage',video-games,RAM,52290,74700,'Single Vehicle Collision',Police,14940,7470,prof-specialty,N
+'Major Damage',dancing,F150,49000,70000,'Single Vehicle Collision',Fire,7000,14000,craft-repair,Y
+'Total Loss',polo,X5,51590,81070,'Multi-vehicle Collision',Other,14740,14740,exec-managerial,N
+'Major Damage',camping,93,33670,57720,'Multi-vehicle Collision',Other,9620,14430,protective-serv,N
+'Minor Damage',reading,F150,4720,7080,'Vehicle Theft',None,1180,1180,armed-forces,N
+'Total Loss',hiking,MDX,33390,47700,'Multi-vehicle Collision',Other,9540,4770,machine-op-inspct,Y
+'Minor Damage',bungie-jumping,Legacy,32620,51260,'Single Vehicle Collision',Police,9320,9320,machine-op-inspct,N
+'Major Damage',exercise,Highlander,51200,70400,'Multi-vehicle Collision',Police,12800,6400,exec-managerial,Y
+'Minor Damage',yachting,Fusion,63000,90000,'Single Vehicle Collision',Fire,9000,18000,transport-moving,N
+'Minor Damage',camping,'3 Series',52960,72820,'Multi-vehicle Collision',Police,6620,13240,adm-clerical,N
+'Minor Damage',board-games,Passat,41580,69300,'Single Vehicle Collision',Fire,13860,13860,priv-house-serv,N
+'Major Damage',video-games,Fusion,51040,76560,'Single Vehicle Collision',Ambulance,12760,12760,other-service,Y
+'Major Damage',skydiving,Maxima,49280,55440,'Single Vehicle Collision',Ambulance,6160,0,other-service,Y
+'Total Loss',movies,MDX,51420,77130,'Multi-vehicle Collision',Other,17140,8570,prof-specialty,N
+'Total Loss',paintball,X5,28000,42000,'Single Vehicle Collision',Ambulance,7000,7000,prof-specialty,N
+'Total Loss',dancing,Escape,23100,36300,'Multi-vehicle Collision',Ambulance,9900,3300,craft-repair,N
+'Total Loss',video-games,Impreza,28800,40320,'Single Vehicle Collision',Other,5760,5760,protective-serv,N
+'Minor Damage',exercise,M5,2970,3960,'Parked Car',Police,660,330,tech-support,N
+'Major Damage',basketball,X5,42560,63840,'Single Vehicle Collision',Fire,10640,10640,farming-fishing,Y
+'Major Damage',sleeping,92x,34790,44730,'Multi-vehicle Collision',Fire,4970,4970,sales,Y
+'Minor Damage',camping,Escape,56480,84720,'Multi-vehicle Collision',Other,14120,14120,machine-op-inspct,N
+'Major Damage',paintball,RAM,43050,61500,'Multi-vehicle Collision',Other,12300,6150,adm-clerical,N
+'Major Damage',exercise,Pathfinder,34000,51000,'Multi-vehicle Collision',Ambulance,8500,8500,tech-support,N
+'Total Loss',skydiving,Wrangler,32760,46800,'Single Vehicle Collision',Police,9360,4680,machine-op-inspct,N
+'Minor Damage',basketball,'3 Series',52080,78120,'Single Vehicle Collision',Ambulance,8680,17360,exec-managerial,N
+'Major Damage',yachting,Passat,48440,69200,'Single Vehicle Collision',Police,6920,13840,exec-managerial,Y
+'Minor Damage',exercise,Escape,2870,3690,'Vehicle Theft',Police,410,410,sales,N
+'Minor Damage',golf,X5,52400,65500,'Multi-vehicle Collision',Fire,6550,6550,tech-support,N
+'Minor Damage',basketball,Camry,55360,76120,'Multi-vehicle Collision',Fire,6920,13840,prof-specialty,N
+'Total Loss',hiking,X5,49040,73560,'Multi-vehicle Collision',Other,12260,12260,other-service,N
+'Total Loss',camping,E400,37840,52030,'Single Vehicle Collision',Police,4730,9460,machine-op-inspct,N
+'Trivial Damage',video-games,Forrestor,3760,5170,'Vehicle Theft',None,940,470,transport-moving,N
+'Minor Damage',video-games,Silverado,5040,8190,'Parked Car',None,1260,1890,machine-op-inspct,N
+'Major Damage',yachting,MDX,49560,70800,'Single Vehicle Collision',Ambulance,14160,7080,exec-managerial,Y
+'Total Loss',video-games,MDX,35490,45630,'Multi-vehicle Collision',Police,5070,5070,farming-fishing,N
+'Major Damage',cross-fit,TL,76400,99320,'Single Vehicle Collision',Police,15280,7640,exec-managerial,Y
+'Major Damage',polo,X6,44800,64000,'Multi-vehicle Collision',Fire,6400,12800,tech-support,Y
+'Minor Damage',golf,Pathfinder,37840,47300,'Single Vehicle Collision',Fire,4730,4730,other-service,N
+'Major Damage',reading,Jetta,53760,71680,'Single Vehicle Collision',Other,8960,8960,adm-clerical,Y
+'Major Damage',skydiving,Impreza,77760,112320,'Single Vehicle Collision',Other,17280,17280,craft-repair,Y
+'Total Loss',base-jumping,A3,60160,82720,'Single Vehicle Collision',Other,15040,7520,farming-fishing,N
+'Major Damage',polo,C300,32040,48060,'Multi-vehicle Collision',Fire,5340,10680,priv-house-serv,N
+'Total Loss',kayaking,Jetta,44010,63570,'Multi-vehicle Collision',Police,9780,9780,exec-managerial,Y
+'Total Loss',paintball,Forrestor,42160,63240,'Multi-vehicle Collision',Fire,10540,10540,craft-repair,N
+'Minor Damage',reading,93,36160,54240,'Multi-vehicle Collision',Ambulance,9040,9040,other-service,Y
+'Major Damage',bungie-jumping,A5,37280,37280,'Single Vehicle Collision',Police,0,0,sales,Y
+'Minor Damage',exercise,Wrangler,50470,72100,'Multi-vehicle Collision',Police,14420,7210,exec-managerial,N
+'Minor Damage',hiking,92x,4550,6500,'Parked Car',None,650,1300,prof-specialty,N
+'Total Loss',movies,Legacy,52160,78240,'Multi-vehicle Collision',Ambulance,13040,13040,machine-op-inspct,N
+'Minor Damage',video-games,Accord,4340,6200,'Vehicle Theft',Police,620,1240,transport-moving,N
+'Minor Damage',reading,E400,3920,6160,'Parked Car',Police,1680,560,priv-house-serv,N
+'Total Loss',dancing,Silverado,52650,76050,'Single Vehicle Collision',Ambulance,11700,11700,farming-fishing,N
+'Total Loss',polo,Passat,59580,86060,'Multi-vehicle Collision',Ambulance,13240,13240,exec-managerial,N
+'Major Damage',sleeping,Neon,75530,107900,'Single Vehicle Collision',Fire,21580,10790,prof-specialty,Y
+'Total Loss',polo,E400,63630,99990,'Multi-vehicle Collision',Fire,18180,18180,prof-specialty,N
+'Minor Damage',bungie-jumping,Legacy,44640,61380,'Multi-vehicle Collision',Ambulance,5580,11160,armed-forces,N
+'Major Damage',board-games,A5,45360,71280,'Single Vehicle Collision',Fire,12960,12960,craft-repair,Y
+'Minor Damage',yachting,95,44800,64000,'Multi-vehicle Collision',Ambulance,6400,12800,farming-fishing,N
+'Trivial Damage',bungie-jumping,Highlander,4620,5940,'Parked Car',Police,660,660,machine-op-inspct,N
+'Minor Damage',movies,Wrangler,5360,6700,'Parked Car',None,670,670,other-service,N
+'Minor Damage',hiking,Wrangler,31840,51740,'Multi-vehicle Collision',Police,7960,11940,armed-forces,N
+'Total Loss',hiking,Jetta,40200,53600,'Single Vehicle Collision',Ambulance,6700,6700,machine-op-inspct,Y
+'Total Loss',board-games,Neon,34930,44910,'Multi-vehicle Collision',Other,4990,4990,protective-serv,N
+'Major Damage',kayaking,Jetta,29600,48100,'Multi-vehicle Collision',Fire,7400,11100,transport-moving,N
+'Trivial Damage',kayaking,Fusion,4270,6100,'Vehicle Theft',None,1220,610,farming-fishing,N
+'Minor Damage',board-games,Wrangler,47760,79600,'Single Vehicle Collision',Other,15920,15920,tech-support,N
+'Minor Damage',dancing,Civic,59920,77040,'Single Vehicle Collision',Ambulance,8560,8560,protective-serv,N
+'Minor Damage',kayaking,Jetta,39830,62590,'Single Vehicle Collision',Fire,11380,11380,prof-specialty,N
+'Total Loss',skydiving,Malibu,58950,85150,'Single Vehicle Collision',Other,13100,13100,armed-forces,N
+'Trivial Damage',exercise,Silverado,3600,4950,'Vehicle Theft',None,900,450,tech-support,N
+'Major Damage',basketball,A3,35770,51100,'Multi-vehicle Collision',Fire,5110,10220,handlers-cleaners,N
+'Minor Damage',reading,Neon,67200,100800,'Single Vehicle Collision',Police,16800,16800,adm-clerical,N
+'Total Loss',exercise,RSX,57890,90970,'Single Vehicle Collision',Police,16540,16540,tech-support,N
+'Minor Damage',cross-fit,Malibu,59520,81840,'Single Vehicle Collision',Police,7440,14880,tech-support,Y
+'Major Damage',sleeping,C300,43920,54900,'Single Vehicle Collision',Ambulance,5490,5490,craft-repair,N
+'Total Loss',cross-fit,C300,64480,88660,'Single Vehicle Collision',Fire,16120,8060,tech-support,Y
+'Total Loss',bungie-jumping,A3,13500,18000,'Multi-vehicle Collision',Ambulance,2250,2250,tech-support,N
+'Minor Damage',exercise,Tahoe,3850,5500,'Vehicle Theft',Police,550,1100,protective-serv,N
+'Major Damage',hiking,Civic,53760,73920,'Multi-vehicle Collision',Other,6720,13440,tech-support,Y
+'Total Loss',polo,CRV,64820,101860,'Single Vehicle Collision',Ambulance,18520,18520,adm-clerical,N
+'Minor Damage',movies,Passat,3430,5390,'Parked Car',None,980,980,tech-support,N
+'Minor Damage',hiking,Maxima,39270,50490,'Single Vehicle Collision',Police,5610,5610,farming-fishing,N
+'Total Loss',basketball,C300,38850,55500,'Single Vehicle Collision',Police,11100,5550,handlers-cleaners,N
+'Minor Damage',hiking,Maxima,5120,7040,'Vehicle Theft',Police,640,1280,other-service,N
+'Total Loss',basketball,Tahoe,35140,40160,'Multi-vehicle Collision',Other,0,5020,farming-fishing,N
+'Total Loss',bungie-jumping,95,41760,55680,'Multi-vehicle Collision',Fire,6960,6960,handlers-cleaners,N
+'Trivial Damage',skydiving,'Grand Cherokee',4240,5300,'Vehicle Theft',Police,530,530,armed-forces,Y
+'Trivial Damage',camping,MDX,3900,5200,'Parked Car',None,650,650,adm-clerical,N
+'Major Damage',bungie-jumping,Civic,41580,59400,'Single Vehicle Collision',Ambulance,11880,5940,armed-forces,N
+'Minor Damage',paintball,'3 Series',1960,2520,'Vehicle Theft',Police,280,280,sales,N
+'Trivial Damage',golf,Impreza,3840,5760,'Vehicle Theft',Police,960,960,craft-repair,N
+'Minor Damage',base-jumping,Legacy,61360,76700,'Single Vehicle Collision',Fire,7670,7670,transport-moving,N
+'Trivial Damage',board-games,Malibu,4440,5920,'Parked Car',Police,740,740,protective-serv,N
+'Major Damage',paintball,Tahoe,50050,64350,'Multi-vehicle Collision',Fire,7150,7150,machine-op-inspct,N
+'Total Loss',kayaking,93,12720,19080,'Multi-vehicle Collision',Ambulance,2120,4240,sales,N
+'Minor Damage',exercise,M5,43520,54400,'Single Vehicle Collision',Police,5440,5440,tech-support,N
+'Total Loss',chess,F150,47840,59800,'Single Vehicle Collision',Fire,5980,5980,sales,Y
+'Major Damage',golf,A3,57600,72000,'Multi-vehicle Collision',Police,7200,7200,handlers-cleaners,N
+'Total Loss',hiking,C300,43380,65070,'Multi-vehicle Collision',Police,14460,7230,adm-clerical,N
+'Trivial Damage',reading,Legacy,6160,8800,'Parked Car',Police,880,1760,sales,N
+'Minor Damage',movies,Corolla,4080,6120,'Vehicle Theft',Police,1020,1020,handlers-cleaners,N
+'Trivial Damage',skydiving,RAM,5310,7080,'Vehicle Theft',None,590,1180,priv-house-serv,N
+'Minor Damage',yachting,Passat,21450,34320,'Multi-vehicle Collision',Ambulance,4290,8580,sales,N
+'Major Damage',reading,Neon,34020,53460,'Multi-vehicle Collision',Other,9720,9720,prof-specialty,Y
+'Total Loss',cross-fit,Legacy,61020,81360,'Single Vehicle Collision',Other,13560,6780,exec-managerial,Y
+'Minor Damage',bungie-jumping,A3,58960,81070,'Multi-vehicle Collision',Ambulance,14740,7370,craft-repair,Y
+'Minor Damage',base-jumping,A5,47340,63120,'Single Vehicle Collision',Fire,10520,5260,machine-op-inspct,N
+'Trivial Damage',yachting,X5,5040,7200,'Vehicle Theft',None,720,1440,transport-moving,N
+'Total Loss',exercise,92x,51120,70290,'Single Vehicle Collision',Other,6390,12780,prof-specialty,Y
+'Minor Damage',camping,X6,41670,60190,'Multi-vehicle Collision',Fire,9260,9260,priv-house-serv,N
+'Major Damage',base-jumping,Civic,44640,61380,'Single Vehicle Collision',Other,5580,11160,farming-fishing,Y
+'Minor Damage',exercise,'Grand Cherokee',19670,28100,'Single Vehicle Collision',Ambulance,5620,2810,other-service,N
+'Total Loss',yachting,Silverado,31220,49060,'Single Vehicle Collision',Fire,8920,8920,sales,N
+'Total Loss',board-games,E400,44380,57060,'Multi-vehicle Collision',Fire,6340,6340,sales,N
+'Major Damage',kayaking,MDX,51920,77880,'Multi-vehicle Collision',Fire,12980,12980,tech-support,N
+'Total Loss',basketball,Wrangler,51450,73500,'Single Vehicle Collision',Ambulance,14700,7350,exec-managerial,N
+'Minor Damage',paintball,RSX,68400,88920,'Multi-vehicle Collision',Other,13680,6840,other-service,N
+'Major Damage',bungie-jumping,Corolla,30310,47630,'Single Vehicle Collision',Other,4330,12990,prof-specialty,Y
+'Total Loss',kayaking,93,45920,59040,'Multi-vehicle Collision',Fire,6560,6560,craft-repair,N
+'Minor Damage',dancing,MDX,57840,79530,'Single Vehicle Collision',Other,7230,14460,farming-fishing,N
+'Total Loss',base-jumping,CRV,43920,53680,'Single Vehicle Collision',Other,4880,4880,machine-op-inspct,N
+'Minor Damage',dancing,Passat,24400,33550,'Single Vehicle Collision',Police,6100,3050,prof-specialty,N
+'Total Loss',exercise,Highlander,55280,69100,'Multi-vehicle Collision',Other,6910,6910,machine-op-inspct,N
+'Major Damage',paintball,Pathfinder,50750,79750,'Multi-vehicle Collision',Police,14500,14500,handlers-cleaners,N
+'Major Damage',polo,A5,37520,53600,'Multi-vehicle Collision',Other,10720,5360,farming-fishing,Y
+'Minor Damage',kayaking,Ultima,57420,76560,'Multi-vehicle Collision',Fire,6380,12760,transport-moving,N
+'Total Loss',golf,RAM,31990,41130,'Single Vehicle Collision',Fire,4570,4570,craft-repair,N
+'Total Loss',cross-fit,A3,57200,78650,'Multi-vehicle Collision',Fire,7150,14300,sales,Y
+'Major Damage',reading,92x,51680,71060,'Single Vehicle Collision',Other,12920,6460,farming-fishing,N
+'Minor Damage',dancing,Legacy,31770,38830,'Single Vehicle Collision',Fire,3530,3530,farming-fishing,N
+'Major Damage',cross-fit,92x,42800,53500,'Single Vehicle Collision',Fire,5350,5350,armed-forces,N
+'Major Damage',skydiving,Silverado,58960,73700,'Single Vehicle Collision',Other,7370,7370,adm-clerical,Y
+'Trivial Damage',camping,Ultima,5040,6300,'Parked Car',None,630,630,exec-managerial,N
+'Total Loss',paintball,RAM,43600,65400,'Multi-vehicle Collision',Ambulance,10900,10900,tech-support,N
+'Trivial Damage',board-games,E400,2240,3200,'Vehicle Theft',None,320,640,armed-forces,N
+'Major Damage',golf,RAM,52780,75400,'Single Vehicle Collision',Fire,15080,7540,tech-support,Y
+'Minor Damage',golf,92x,45220,58140,'Single Vehicle Collision',Fire,6460,6460,machine-op-inspct,N
+'Total Loss',chess,Tahoe,68310,98670,'Multi-vehicle Collision',Ambulance,15180,15180,other-service,Y
+'Minor Damage',golf,E400,4130,5900,'Parked Car',None,590,1180,machine-op-inspct,N
+'Major Damage',paintball,Malibu,51280,64100,'Single Vehicle Collision',Fire,6410,6410,armed-forces,N
+'Total Loss',yachting,Forrestor,40320,55440,'Multi-vehicle Collision',Fire,10080,5040,transport-moving,Y
+'Major Damage',yachting,F150,58800,80850,'Multi-vehicle Collision',Police,14700,7350,sales,Y
+'Trivial Damage',bungie-jumping,95,6120,7480,'Vehicle Theft',Police,680,680,transport-moving,N
+'Major Damage',movies,Maxima,41720,53640,'Single Vehicle Collision',Fire,5960,5960,transport-moving,Y
+'Major Damage',base-jumping,Tahoe,46000,63250,'Multi-vehicle Collision',Fire,11500,5750,tech-support,Y
+'Major Damage',golf,RAM,39360,59040,'Multi-vehicle Collision',Ambulance,9840,9840,farming-fishing,N
+'Total Loss',base-jumping,TL,35350,50500,'Multi-vehicle Collision',Other,5050,10100,craft-repair,N
+'Major Damage',cross-fit,C300,38460,57690,'Single Vehicle Collision',Police,12820,6410,machine-op-inspct,Y
+'Trivial Damage',base-jumping,Camry,4620,5940,'Vehicle Theft',Police,660,660,sales,N
+'Major Damage',dancing,Impreza,37170,47790,'Multi-vehicle Collision',Fire,5310,5310,exec-managerial,Y
+'Trivial Damage',skydiving,Neon,3150,3850,'Parked Car',None,350,350,priv-house-serv,N
+'Major Damage',reading,Fusion,47200,59000,'Single Vehicle Collision',Police,5900,5900,other-service,Y
+'Major Damage',golf,Passat,49420,70600,'Multi-vehicle Collision',Ambulance,14120,7060,machine-op-inspct,Y
+'Minor Damage',base-jumping,RAM,44720,61490,'Multi-vehicle Collision',Police,11180,5590,armed-forces,N
+'Minor Damage',kayaking,Passat,41920,57640,'Single Vehicle Collision',Police,10480,5240,protective-serv,N
+'Trivial Damage',movies,A5,4770,6890,'Vehicle Theft',Police,1060,1060,craft-repair,N
+'Major Damage',hiking,Camry,35520,53280,'Multi-vehicle Collision',Fire,5920,11840,machine-op-inspct,Y
+'Minor Damage',video-games,X5,54810,78300,'Multi-vehicle Collision',Fire,7830,15660,handlers-cleaners,N
+'Major Damage',reading,Pathfinder,32270,41490,'Multi-vehicle Collision',Ambulance,4610,4610,protective-serv,N
+'Total Loss',camping,Tahoe,50160,68970,'Multi-vehicle Collision',Fire,6270,12540,machine-op-inspct,N
+'Minor Damage',camping,Highlander,59710,85300,'Multi-vehicle Collision',Police,8530,17060,handlers-cleaners,N
+'Minor Damage',camping,A3,2240,3080,'Parked Car',None,280,560,other-service,N
+'Major Damage',paintball,'Grand Cherokee',49680,71760,'Multi-vehicle Collision',Police,11040,11040,craft-repair,Y
+'Minor Damage',skydiving,Ultima,35820,59700,'Multi-vehicle Collision',Ambulance,11940,11940,armed-forces,N
+'Minor Damage',skydiving,Fusion,43280,64920,'Multi-vehicle Collision',Fire,10820,10820,other-service,N
+'Major Damage',board-games,Wrangler,29190,37530,'Multi-vehicle Collision',Ambulance,4170,4170,machine-op-inspct,N
+'Total Loss',paintball,93,49840,64080,'Multi-vehicle Collision',Ambulance,7120,7120,tech-support,N
+'Minor Damage',cross-fit,M5,43920,60390,'Single Vehicle Collision',Other,5490,10980,prof-specialty,Y
+'Major Damage',exercise,Pathfinder,46800,64350,'Multi-vehicle Collision',Police,11700,5850,armed-forces,Y
+'Minor Damage',sleeping,X6,49630,70900,'Multi-vehicle Collision',Police,7090,14180,other-service,N
+'Minor Damage',movies,Ultima,31040,46560,'Multi-vehicle Collision',Fire,7760,7760,craft-repair,N
+'Trivial Damage',cross-fit,Malibu,3010,4730,'Vehicle Theft',Police,860,860,craft-repair,Y
+'Minor Damage',video-games,'Grand Cherokee',4340,6820,'Vehicle Theft',Police,1240,1240,transport-moving,N
+'Major Damage',sleeping,X5,41930,59900,'Single Vehicle Collision',Police,5990,11980,tech-support,Y
+'Major Damage',basketball,Escape,53040,79560,'Multi-vehicle Collision',Police,13260,13260,priv-house-serv,N
+'Total Loss',kayaking,MDX,51120,70290,'Single Vehicle Collision',Other,6390,12780,adm-clerical,N
+'Total Loss',hiking,Forrestor,46480,63910,'Multi-vehicle Collision',Ambulance,11620,5810,priv-house-serv,N
+'Trivial Damage',golf,Camry,5120,6400,'Vehicle Theft',None,640,640,transport-moving,N
+'Major Damage',movies,Escape,51940,66780,'Single Vehicle Collision',Ambulance,7420,7420,handlers-cleaners,Y
+'Minor Damage',hiking,'3 Series',5840,8760,'Parked Car',Police,1460,1460,sales,N
+'Major Damage',kayaking,Malibu,68480,94160,'Single Vehicle Collision',Ambulance,17120,8560,machine-op-inspct,N
+'Total Loss',golf,X5,34380,51570,'Multi-vehicle Collision',Ambulance,11460,5730,protective-serv,N
+'Major Damage',polo,X6,31620,52700,'Multi-vehicle Collision',Fire,10540,10540,handlers-cleaners,Y
+'Minor Damage',dancing,ML350,69930,101010,'Single Vehicle Collision',Fire,15540,15540,sales,N
+'Minor Damage',golf,Civic,42720,53400,'Multi-vehicle Collision',Police,5340,5340,exec-managerial,Y
+'Total Loss',basketball,ML350,48080,72120,'Single Vehicle Collision',Fire,12020,12020,prof-specialty,N
+'Minor Damage',reading,A3,53970,77100,'Multi-vehicle Collision',Police,15420,7710,protective-serv,N
+'Trivial Damage',dancing,RAM,2700,3300,'Parked Car',Police,0,600,handlers-cleaners,N
+'Minor Damage',golf,Pathfinder,4320,5940,'Parked Car',None,540,1080,adm-clerical,N
+'Major Damage',video-games,TL,35400,63720,'Multi-vehicle Collision',Other,21240,7080,transport-moving,N
+'Trivial Damage',base-jumping,A5,5760,7680,'Vehicle Theft',Police,640,1280,farming-fishing,N
+'Total Loss',yachting,CRV,57680,93730,'Multi-vehicle Collision',Police,21630,14420,handlers-cleaners,N
+'Major Damage',base-jumping,Wrangler,52380,87300,'Multi-vehicle Collision',Police,17460,17460,sales,N
+'Trivial Damage',camping,F150,3780,5670,'Parked Car',Police,630,1260,transport-moving,N
+'Minor Damage',bungie-jumping,TL,46060,65800,'Multi-vehicle Collision',Other,6580,13160,priv-house-serv,N
+'Major Damage',base-jumping,Accord,28560,36720,'Single Vehicle Collision',Other,4080,4080,handlers-cleaners,Y
+'Major Damage',kayaking,ML350,38400,52800,'Single Vehicle Collision',Fire,9600,4800,farming-fishing,Y
+'Total Loss',cross-fit,Maxima,47280,59100,'Multi-vehicle Collision',Fire,5910,5910,protective-serv,Y
+'Total Loss',hiking,Legacy,56320,77440,'Multi-vehicle Collision',Other,7040,14080,machine-op-inspct,N
+'Total Loss',golf,'3 Series',36560,45700,'Multi-vehicle Collision',Fire,4570,4570,armed-forces,N
+'Major Damage',dancing,Camry,58720,80740,'Multi-vehicle Collision',Other,14680,7340,sales,Y
+'Major Damage',base-jumping,Accord,22800,31350,'Multi-vehicle Collision',Ambulance,5700,2850,sales,Y
+'Total Loss',skydiving,Legacy,24500,35000,'Single Vehicle Collision',Other,7000,3500,handlers-cleaners,N
+'Total Loss',board-games,Corolla,47600,68000,'Multi-vehicle Collision',Police,6800,13600,protective-serv,N
+'Minor Damage',golf,X6,58500,84500,'Multi-vehicle Collision',Other,13000,13000,machine-op-inspct,N
+'Minor Damage',bungie-jumping,Ultima,52850,75500,'Single Vehicle Collision',Police,15100,7550,transport-moving,N
+'Total Loss',bungie-jumping,X5,60400,90600,'Multi-vehicle Collision',Other,15100,15100,exec-managerial,N
+'Total Loss',camping,MDX,48240,64320,'Multi-vehicle Collision',Ambulance,10720,5360,adm-clerical,N
+'Minor Damage',yachting,Highlander,22190,31700,'Multi-vehicle Collision',Police,3170,6340,transport-moving,N
+'Major Damage',reading,Forrestor,49520,74280,'Single Vehicle Collision',Other,12380,12380,protective-serv,Y
+'Total Loss',video-games,Corolla,60390,80520,'Single Vehicle Collision',Fire,6710,13420,sales,N
+'Major Damage',polo,RAM,44520,63600,'Multi-vehicle Collision',Other,12720,6360,adm-clerical,N
+'Total Loss',movies,'3 Series',26240,32800,'Single Vehicle Collision',Police,3280,3280,handlers-cleaners,N
+'Total Loss',board-games,A3,29460,44190,'Multi-vehicle Collision',Police,4910,9820,priv-house-serv,N
+'Major Damage',sleeping,CRV,35280,50400,'Multi-vehicle Collision',Other,5040,10080,exec-managerial,Y
+'Total Loss',sleeping,Pathfinder,61880,88400,'Multi-vehicle Collision',Police,8840,17680,tech-support,N
+'Total Loss',bungie-jumping,Jetta,48400,66550,'Multi-vehicle Collision',Fire,6050,12100,farming-fishing,N
+'Minor Damage',yachting,Tahoe,47840,65780,'Multi-vehicle Collision',Police,11960,5980,craft-repair,N
+'Major Damage',base-jumping,A3,37680,51810,'Multi-vehicle Collision',Other,4710,9420,armed-forces,Y
+'Major Damage',board-games,CRV,40480,55660,'Single Vehicle Collision',Other,10120,5060,protective-serv,Y
+'Major Damage',base-jumping,Camry,29760,44640,'Single Vehicle Collision',Fire,4960,9920,machine-op-inspct,N
+'Major Damage',reading,Maxima,56480,77660,'Multi-vehicle Collision',Ambulance,14120,7060,transport-moving,Y
+'Trivial Damage',base-jumping,Ultima,3760,5640,'Parked Car',None,940,940,tech-support,N
+'Trivial Damage',reading,Legacy,2030,3190,'Parked Car',None,580,580,prof-specialty,N
+'Total Loss',hiking,Escape,46760,53440,'Single Vehicle Collision',Fire,6680,0,prof-specialty,N
+'Minor Damage',camping,'3 Series',50750,65250,'Single Vehicle Collision',Police,7250,7250,armed-forces,N
+'Minor Damage',sleeping,Silverado,34440,44280,'Multi-vehicle Collision',Fire,4920,4920,armed-forces,N
+'Total Loss',camping,RAM,54670,70290,'Single Vehicle Collision',Police,7810,7810,tech-support,N
+'Minor Damage',movies,92x,69680,87100,'Single Vehicle Collision',Other,8710,8710,priv-house-serv,N
+'Total Loss',video-games,Forrestor,41220,50380,'Multi-vehicle Collision',Fire,4580,4580,priv-house-serv,N
+'Total Loss',cross-fit,A3,45360,64800,'Multi-vehicle Collision',Police,6480,12960,sales,Y
+'Minor Damage',movies,'3 Series',44800,70400,'Single Vehicle Collision',Other,12800,12800,craft-repair,N
+'Major Damage',skydiving,Impreza,47340,57860,'Single Vehicle Collision',Police,10520,0,armed-forces,Y
+'Minor Damage',sleeping,Fusion,4320,6240,'Vehicle Theft',None,960,960,protective-serv,N
+'Total Loss',board-games,'Grand Cherokee',38850,66600,'Single Vehicle Collision',Police,11100,16650,tech-support,Y
+'Minor Damage',hiking,Wrangler,47280,70920,'Single Vehicle Collision',Police,11820,11820,transport-moving,N
+'Minor Damage',skydiving,Forrestor,26320,39480,'Single Vehicle Collision',Ambulance,6580,6580,machine-op-inspct,N
+'Total Loss',base-jumping,E400,47430,63240,'Single Vehicle Collision',Other,5270,10540,handlers-cleaners,N
+'Total Loss',cross-fit,A5,49200,67650,'Multi-vehicle Collision',Other,6150,12300,tech-support,N
+'Major Damage',bungie-jumping,TL,44520,74200,'Single Vehicle Collision',Fire,14840,14840,craft-repair,Y
+'Minor Damage',polo,Jetta,38940,64900,'Single Vehicle Collision',Other,12980,12980,tech-support,N
+'Major Damage',paintball,A3,25130,35900,'Multi-vehicle Collision',Ambulance,3590,7180,machine-op-inspct,Y
+'Minor Damage',camping,CRV,36540,52200,'Single Vehicle Collision',Fire,10440,5220,craft-repair,N
+'Minor Damage',skydiving,Forrestor,58500,78000,'Single Vehicle Collision',Police,13000,6500,adm-clerical,N
+'Minor Damage',base-jumping,Passat,53760,67200,'Multi-vehicle Collision',Ambulance,6720,6720,adm-clerical,N
+'Total Loss',golf,Ultima,46000,63250,'Single Vehicle Collision',Fire,5750,11500,prof-specialty,N
+'Major Damage',paintball,Fusion,51570,68760,'Multi-vehicle Collision',Other,5730,11460,craft-repair,N
+'Minor Damage',movies,Impreza,43360,65040,'Multi-vehicle Collision',Police,10840,10840,other-service,N
+'Major Damage',yachting,'Grand Cherokee',48300,82800,'Single Vehicle Collision',Ambulance,13800,20700,adm-clerical,Y
+'Total Loss',basketball,93,49360,61700,'Single Vehicle Collision',Other,6170,6170,priv-house-serv,N
+'Major Damage',polo,Tahoe,54670,78100,'Multi-vehicle Collision',Ambulance,7810,15620,transport-moving,Y
+'Major Damage',paintball,Highlander,46800,65520,'Multi-vehicle Collision',Ambulance,9360,9360,priv-house-serv,Y
+'Trivial Damage',polo,93,3600,4500,'Parked Car',None,450,450,prof-specialty,N
+'Major Damage',reading,ML350,36600,42700,'Multi-vehicle Collision',Other,6100,0,sales,Y
+'Minor Damage',polo,Passat,4340,5580,'Parked Car',Police,620,620,adm-clerical,Y
+'Minor Damage',chess,X5,2520,3600,'Parked Car',None,720,360,adm-clerical,Y
+'Trivial Damage',dancing,Passat,2240,2800,'Vehicle Theft',None,280,280,exec-managerial,N
+'Minor Damage',hiking,Highlander,42000,54000,'Single Vehicle Collision',Ambulance,6000,6000,adm-clerical,N
+'Minor Damage',yachting,TL,35600,48950,'Single Vehicle Collision',Police,8900,4450,craft-repair,Y
+'Major Damage',hiking,RAM,46680,77800,'Multi-vehicle Collision',Other,15560,15560,exec-managerial,N
+'Major Damage',exercise,93,35040,52560,'Multi-vehicle Collision',Other,5840,11680,protective-serv,N
+'Total Loss',dancing,Accord,32080,44110,'Multi-vehicle Collision',Police,8020,4010,farming-fishing,N
+'Total Loss',video-games,Forrestor,54080,74360,'Single Vehicle Collision',Other,6760,13520,sales,N
+'Minor Damage',base-jumping,Civic,4760,6120,'Parked Car',None,680,680,armed-forces,Y
+'Minor Damage',chess,Forrestor,46710,62280,'Multi-vehicle Collision',Police,10380,5190,transport-moving,N
+'Total Loss',reading,Jetta,17010,26730,'Multi-vehicle Collision',Other,4860,4860,sales,N
+'Major Damage',exercise,Neon,52960,66200,'Single Vehicle Collision',Ambulance,6620,6620,craft-repair,N
+'Total Loss',polo,Corolla,31850,45500,'Single Vehicle Collision',Fire,4550,9100,other-service,N
+'Minor Damage',sleeping,A3,44200,53040,'Multi-vehicle Collision',Ambulance,4420,4420,transport-moving,N
+'Major Damage',reading,E400,35560,50800,'Multi-vehicle Collision',Other,5080,10160,other-service,Y
+'Total Loss',sleeping,A5,35360,44200,'Multi-vehicle Collision',Police,4420,4420,craft-repair,N
+'Minor Damage',base-jumping,Malibu,45760,62920,'Single Vehicle Collision',Police,5720,11440,exec-managerial,N
+'Minor Damage',golf,Ultima,38850,49950,'Multi-vehicle Collision',Other,5550,5550,exec-managerial,Y
+'Minor Damage',chess,'3 Series',43890,56430,'Single Vehicle Collision',Ambulance,6270,6270,armed-forces,Y
+'Minor Damage',board-games,A5,63770,100210,'Single Vehicle Collision',Police,18220,18220,protective-serv,N
+'Minor Damage',base-jumping,F150,38220,49140,'Multi-vehicle Collision',Fire,5460,5460,prof-specialty,N
+'Major Damage',paintball,E400,44560,66840,'Single Vehicle Collision',Ambulance,5570,16710,other-service,N
+'Total Loss',camping,Accord,48580,62460,'Single Vehicle Collision',Other,6940,6940,machine-op-inspct,N
+'Total Loss',base-jumping,Ultima,39970,62810,'Multi-vehicle Collision',Other,11420,11420,machine-op-inspct,N
+'Major Damage',sleeping,Legacy,40620,54160,'Single Vehicle Collision',Ambulance,6770,6770,priv-house-serv,N
+'Major Damage',golf,92x,33880,48400,'Single Vehicle Collision',Ambulance,4840,9680,exec-managerial,N
+'Total Loss',golf,Highlander,40040,51480,'Multi-vehicle Collision',Fire,5720,5720,exec-managerial,N
+'Total Loss',board-games,95,36190,51700,'Multi-vehicle Collision',Fire,10340,5170,prof-specialty,N
+'Total Loss',video-games,Jetta,49140,65520,'Multi-vehicle Collision',Other,5460,10920,exec-managerial,N
+'Major Damage',reading,TL,33390,47700,'Multi-vehicle Collision',Other,9540,4770,farming-fishing,Y
+'Minor Damage',video-games,MDX,4060,5220,'Vehicle Theft',None,580,580,machine-op-inspct,N
+'Major Damage',exercise,Fusion,54990,73320,'Single Vehicle Collision',Other,12220,6110,protective-serv,N
+'Minor Damage',dancing,'Grand Cherokee',52430,74900,'Single Vehicle Collision',Fire,7490,14980,adm-clerical,N
+'Trivial Damage',dancing,95,2320,3190,'Vehicle Theft',Police,290,580,prof-specialty,N
+'Minor Damage',exercise,Malibu,57690,76920,'Single Vehicle Collision',Ambulance,6410,12820,armed-forces,N
+'Total Loss',video-games,Wrangler,56720,77990,'Multi-vehicle Collision',Police,14180,7090,priv-house-serv,N
+'Total Loss',base-jumping,Escape,41310,59670,'Single Vehicle Collision',Fire,9180,9180,transport-moving,N
+'Major Damage',skydiving,C300,32640,44880,'Multi-vehicle Collision',Ambulance,4080,8160,craft-repair,Y
+'Minor Damage',skydiving,A5,60240,82830,'Single Vehicle Collision',Ambulance,15060,7530,sales,N
+'Minor Damage',cross-fit,Silverado,61440,84480,'Single Vehicle Collision',Other,15360,7680,armed-forces,Y
+'Total Loss',skydiving,Civic,55860,79800,'Multi-vehicle Collision',Fire,7980,15960,transport-moving,N
+'Minor Damage',exercise,Corolla,33740,53020,'Multi-vehicle Collision',Police,9640,9640,adm-clerical,N
+'Total Loss',sleeping,Forrestor,17600,24200,'Multi-vehicle Collision',Police,4400,2200,machine-op-inspct,N
+'Minor Damage',camping,Silverado,27510,43230,'Single Vehicle Collision',Fire,7860,7860,exec-managerial,N
+'Trivial Damage',cross-fit,Escape,2320,3190,'Vehicle Theft',None,580,290,exec-managerial,N
+'Minor Damage',polo,M5,3900,5850,'Parked Car',None,650,1300,adm-clerical,N
+'Trivial Damage',video-games,'3 Series',4960,6820,'Parked Car',Police,1240,620,machine-op-inspct,N
+'Minor Damage',camping,Tahoe,46320,69480,'Multi-vehicle Collision',Fire,11580,11580,farming-fishing,N
+'Major Damage',movies,'Grand Cherokee',70920,94560,'Multi-vehicle Collision',Fire,15760,7880,prof-specialty,N
+'Minor Damage',paintball,RAM,6240,7800,'Vehicle Theft',None,780,780,armed-forces,N
+'Total Loss',basketball,Legacy,44560,61270,'Single Vehicle Collision',Other,11140,5570,machine-op-inspct,N
+'Total Loss',bungie-jumping,ML350,53580,71440,'Single Vehicle Collision',Police,8930,8930,transport-moving,N
+'Total Loss',exercise,'Grand Cherokee',38920,55600,'Single Vehicle Collision',Ambulance,5560,11120,priv-house-serv,N
+'Trivial Damage',board-games,Wrangler,3500,5000,'Vehicle Theft',Police,500,1000,priv-house-serv,N
+'Minor Damage',paintball,X5,66330,95810,'Single Vehicle Collision',Other,14740,14740,exec-managerial,N
+'Major Damage',chess,Jetta,48510,69300,'Single Vehicle Collision',Ambulance,13860,6930,tech-support,N
+'Total Loss',video-games,Camry,47320,81120,'Single Vehicle Collision',Ambulance,20280,13520,prof-specialty,N
+'Major Damage',hiking,Corolla,63180,91260,'Single Vehicle Collision',Other,14040,14040,handlers-cleaners,N
+'Minor Damage',kayaking,Fusion,42420,60600,'Single Vehicle Collision',Fire,12120,6060,other-service,N
+'Major Damage',base-jumping,Forrestor,45360,64800,'Multi-vehicle Collision',Ambulance,12960,6480,machine-op-inspct,Y
+'Major Damage',basketball,Silverado,48640,66880,'Multi-vehicle Collision',Police,12160,6080,exec-managerial,Y
+'Total Loss',cross-fit,X5,46560,58200,'Single Vehicle Collision',Ambulance,5820,5820,farming-fishing,N
+'Minor Damage',polo,Maxima,47110,60570,'Single Vehicle Collision',Police,6730,6730,priv-house-serv,N
+'Major Damage',camping,ML350,52260,69680,'Multi-vehicle Collision',Ambulance,8710,8710,exec-managerial,Y
+'Total Loss',bungie-jumping,Maxima,38990,55700,'Single Vehicle Collision',Fire,11140,5570,transport-moving,N
+'Total Loss',sleeping,Neon,51030,62370,'Multi-vehicle Collision',Ambulance,5670,5670,transport-moving,N
+'Total Loss',yachting,92x,44460,54340,'Multi-vehicle Collision',Other,0,9880,priv-house-serv,N
+'Major Damage',base-jumping,A5,42910,55170,'Single Vehicle Collision',Police,6130,6130,priv-house-serv,Y
+'Minor Damage',exercise,RAM,40950,58500,'Single Vehicle Collision',Other,5850,11700,priv-house-serv,N
+'Major Damage',skydiving,CRV,46620,59940,'Single Vehicle Collision',Fire,6660,6660,priv-house-serv,N
+'Total Loss',reading,Neon,58720,73400,'Single Vehicle Collision',Police,7340,7340,machine-op-inspct,N
+'Major Damage',bungie-jumping,Legacy,32550,41850,'Single Vehicle Collision',Fire,4650,4650,exec-managerial,N
+'Trivial Damage',chess,ML350,4480,6400,'Parked Car',Police,1280,640,priv-house-serv,Y
+'Trivial Damage',sleeping,A5,2320,3190,'Vehicle Theft',Police,290,580,other-service,N
+'Trivial Damage',polo,Pathfinder,4720,5900,'Parked Car',None,590,590,handlers-cleaners,N
+'Total Loss',yachting,Neon,44590,57330,'Single Vehicle Collision',Fire,6370,6370,protective-serv,N
+'Total Loss',board-games,Neon,54640,81960,'Multi-vehicle Collision',Other,13660,13660,tech-support,N
+'Major Damage',exercise,Legacy,44800,70400,'Single Vehicle Collision',Fire,19200,6400,transport-moving,Y
+'Minor Damage',paintball,'Grand Cherokee',2610,3770,'Parked Car',None,580,580,protective-serv,N
+'Minor Damage',reading,Neon,5180,7400,'Parked Car',None,1480,740,sales,N
+'Total Loss',chess,Silverado,42630,54810,'Single Vehicle Collision',Police,6090,6090,farming-fishing,Y
+'Total Loss',dancing,Wrangler,34580,49400,'Single Vehicle Collision',Fire,9880,4940,priv-house-serv,N
+'Minor Damage',exercise,Malibu,50000,68750,'Single Vehicle Collision',Fire,6250,12500,tech-support,N
+'Total Loss',yachting,Neon,43050,61500,'Single Vehicle Collision',Ambulance,6150,12300,adm-clerical,N
+'Major Damage',reading,X6,55920,76890,'Multi-vehicle Collision',Ambulance,13980,6990,other-service,N
+'Minor Damage',base-jumping,Camry,37380,56070,'Single Vehicle Collision',Ambulance,12460,6230,other-service,N
+'Total Loss',reading,Malibu,42000,56000,'Single Vehicle Collision',Fire,0,14000,transport-moving,N
+'Trivial Damage',board-games,A3,3120,4290,'Parked Car',None,390,780,priv-house-serv,N
+'Total Loss',reading,Forrestor,47250,60750,'Multi-vehicle Collision',Other,6750,6750,transport-moving,N
+'Minor Damage',board-games,Malibu,39870,48730,'Single Vehicle Collision',Other,4430,4430,machine-op-inspct,N
+'Minor Damage',video-games,Escape,60550,95150,'Multi-vehicle Collision',Police,17300,17300,adm-clerical,N
+'Minor Damage',yachting,Neon,6120,7480,'Vehicle Theft',Police,680,680,craft-repair,N
+'Major Damage',movies,Passat,59850,79800,'Single Vehicle Collision',Ambulance,6650,13300,transport-moving,Y
+'Total Loss',board-games,Wrangler,77670,103560,'Single Vehicle Collision',Other,17260,8630,priv-house-serv,N
+'Minor Damage',yachting,MDX,55650,79500,'Single Vehicle Collision',Ambulance,7950,15900,other-service,N
+'Minor Damage',base-jumping,Passat,55440,76230,'Single Vehicle Collision',Other,13860,6930,tech-support,Y
+'Minor Damage',board-games,Accord,39680,59520,'Single Vehicle Collision',Ambulance,9920,9920,protective-serv,N
+'Major Damage',hiking,Impreza,35820,47760,'Multi-vehicle Collision',Police,5970,5970,tech-support,Y
+'Total Loss',golf,93,61520,84590,'Multi-vehicle Collision',Police,7690,15380,prof-specialty,N
+'Total Loss',skydiving,Ultima,47950,61650,'Multi-vehicle Collision',Other,6850,6850,handlers-cleaners,N
+'Major Damage',dancing,M5,65120,81400,'Single Vehicle Collision',Police,8140,8140,handlers-cleaners,N
+'Major Damage',camping,Tahoe,42480,58410,'Multi-vehicle Collision',Fire,5310,10620,transport-moving,N
+'Major Damage',exercise,Passat,31590,38610,'Multi-vehicle Collision',Ambulance,3510,3510,protective-serv,N
+'Minor Damage',yachting,Passat,38400,57600,'Multi-vehicle Collision',Fire,9600,9600,farming-fishing,N
+'Minor Damage',kayaking,Jetta,35460,53190,'Multi-vehicle Collision',Fire,11820,5910,protective-serv,N
+'Major Damage',skydiving,Maxima,40810,58300,'Single Vehicle Collision',Other,11660,5830,craft-repair,Y
+'Minor Damage',video-games,Neon,57440,64620,'Multi-vehicle Collision',Ambulance,0,7180,tech-support,N
+'Total Loss',hiking,X6,60320,90480,'Multi-vehicle Collision',Ambulance,15080,15080,armed-forces,N
+'Trivial Damage',kayaking,Maxima,4720,7080,'Vehicle Theft',None,1180,1180,farming-fishing,N
+'Minor Damage',chess,Camry,4720,6490,'Parked Car',Police,1180,590,exec-managerial,Y
+'Total Loss',golf,Ultima,44720,55900,'Multi-vehicle Collision',Police,5590,5590,other-service,N
+'Major Damage',polo,92x,51040,63800,'Single Vehicle Collision',Other,6380,6380,adm-clerical,Y
+'Total Loss',cross-fit,95,43620,58160,'Single Vehicle Collision',Police,7270,7270,farming-fishing,Y
+'Minor Damage',chess,C300,4410,6300,'Vehicle Theft',Police,1260,630,armed-forces,Y
+'Major Damage',yachting,ML350,66570,104610,'Single Vehicle Collision',Fire,19020,19020,sales,Y
+'Major Damage',sleeping,Fusion,50800,69850,'Multi-vehicle Collision',Fire,6350,12700,exec-managerial,N
+'Minor Damage',polo,MDX,44030,62900,'Single Vehicle Collision',Fire,6290,12580,priv-house-serv,N
+'Major Damage',golf,Passat,46410,59670,'Multi-vehicle Collision',Other,6630,6630,handlers-cleaners,Y
+'Minor Damage',camping,'3 Series',57050,81500,'Multi-vehicle Collision',Other,8150,16300,armed-forces,N
+'Minor Damage',video-games,Wrangler,30000,50000,'Single Vehicle Collision',Ambulance,5000,15000,armed-forces,N
+'Total Loss',exercise,Maxima,30730,48290,'Single Vehicle Collision',Other,8780,8780,adm-clerical,N
+'Total Loss',golf,Malibu,48330,59070,'Single Vehicle Collision',Fire,5370,5370,other-service,N
+'Minor Damage',yachting,RAM,44310,63300,'Multi-vehicle Collision',Police,6330,12660,armed-forces,N
+'Total Loss',exercise,ML350,41860,65780,'Single Vehicle Collision',Other,11960,11960,prof-specialty,N
+'Total Loss',cross-fit,Neon,52200,75400,'Multi-vehicle Collision',Ambulance,11600,11600,transport-moving,Y
+'Minor Damage',movies,Corolla,1750,2250,'Vehicle Theft',None,250,250,armed-forces,N
+'Minor Damage',reading,'Grand Cherokee',40590,54120,'Multi-vehicle Collision',Ambulance,9020,4510,machine-op-inspct,N
+'Major Damage',camping,95,46320,69480,'Multi-vehicle Collision',Other,11580,11580,machine-op-inspct,N
+'Minor Damage',reading,Malibu,46350,66950,'Single Vehicle Collision',Police,10300,10300,adm-clerical,N
+'Major Damage',board-games,RAM,44870,64100,'Multi-vehicle Collision',Other,6410,12820,armed-forces,Y
+'Minor Damage',camping,Tahoe,53520,80280,'Single Vehicle Collision',Other,13380,13380,prof-specialty,N
+'Trivial Damage',hiking,MDX,4160,4680,'Vehicle Theft',Police,0,520,machine-op-inspct,N
+'Minor Damage',base-jumping,MDX,26480,39720,'Multi-vehicle Collision',Ambulance,6620,6620,tech-support,N
+'Major Damage',exercise,ML350,52020,63580,'Single Vehicle Collision',Police,5780,5780,exec-managerial,Y
+'Minor Damage',camping,95,53360,73370,'Single Vehicle Collision',Other,6670,13340,craft-repair,N
+'Minor Damage',paintball,CRV,55230,86790,'Single Vehicle Collision',Police,23670,7890,craft-repair,N
+'Major Damage',sleeping,ML350,34860,49800,'Single Vehicle Collision',Police,4980,9960,tech-support,N
+'Major Damage',exercise,Ultima,56320,77440,'Single Vehicle Collision',Other,14080,7040,armed-forces,N
+'Total Loss',board-games,TL,34320,42900,'Single Vehicle Collision',Other,0,8580,handlers-cleaners,N
+'Major Damage',skydiving,F150,35880,53820,'Multi-vehicle Collision',Fire,5980,11960,farming-fishing,Y
+'Minor Damage',reading,'Grand Cherokee',38220,57330,'Single Vehicle Collision',Police,6370,12740,sales,N
+'Minor Damage',paintball,Ultima,41510,53370,'Multi-vehicle Collision',Police,5930,5930,tech-support,N
+'Minor Damage',yachting,MDX,38720,62920,'Single Vehicle Collision',Police,14520,9680,prof-specialty,N
+'Total Loss',board-games,CRV,43120,61600,'Multi-vehicle Collision',Fire,12320,6160,machine-op-inspct,N
+'Total Loss',golf,E400,55620,74160,'Multi-vehicle Collision',Police,12360,6180,sales,N
+'Total Loss',reading,A3,62300,80100,'Single Vehicle Collision',Police,8900,8900,priv-house-serv,N
+'Trivial Damage',paintball,Jetta,4920,6560,'Parked Car',Police,820,820,sales,N
+'Total Loss',hiking,Pathfinder,41160,58800,'Single Vehicle Collision',Ambulance,5880,11760,other-service,N
+'Minor Damage',chess,RAM,35820,53730,'Multi-vehicle Collision',Ambulance,5970,11940,transport-moving,Y
+'Total Loss',cross-fit,Civic,45450,60600,'Single Vehicle Collision',Ambulance,10100,5050,other-service,N
+'Total Loss',movies,E400,26000,35750,'Single Vehicle Collision',Other,3250,6500,tech-support,N
+'Total Loss',exercise,Silverado,32130,42840,'Single Vehicle Collision',Ambulance,7140,3570,adm-clerical,N
+'Major Damage',hiking,Wrangler,58640,87960,'Multi-vehicle Collision',Fire,14660,14660,armed-forces,Y
+'Minor Damage',camping,'Grand Cherokee',38240,47800,'Multi-vehicle Collision',Ambulance,4780,4780,protective-serv,N
+'Trivial Damage',exercise,Tahoe,2560,3840,'Vehicle Theft',Police,640,640,tech-support,N
+'Total Loss',hiking,RSX,56000,77000,'Single Vehicle Collision',Fire,7000,14000,transport-moving,N
+'Total Loss',skydiving,A5,56070,88110,'Single Vehicle Collision',Ambulance,16020,16020,farming-fishing,N
+'Minor Damage',hiking,Civic,39060,47740,'Multi-vehicle Collision',Fire,4340,4340,farming-fishing,N
+'Total Loss',video-games,F150,42880,58960,'Multi-vehicle Collision',Fire,10720,5360,craft-repair,N
+'Minor Damage',skydiving,Corolla,1440,2160,'Parked Car',Police,240,480,tech-support,N
+'Trivial Damage',exercise,'Grand Cherokee',5300,6890,'Vehicle Theft',Police,1060,530,prof-specialty,N
+'Major Damage',kayaking,Legacy,57360,78870,'Multi-vehicle Collision',Ambulance,14340,7170,prof-specialty,N
+'Trivial Damage',basketball,F150,2100,2700,'Vehicle Theft',Police,300,300,sales,N
+'Total Loss',kayaking,'Grand Cherokee',63300,75960,'Single Vehicle Collision',Ambulance,6330,6330,machine-op-inspct,N
+'Major Damage',video-games,X5,54960,75570,'Single Vehicle Collision',Police,13740,6870,sales,Y
+'Minor Damage',exercise,Malibu,60160,90240,'Single Vehicle Collision',Police,15040,15040,sales,N
+'Major Damage',dancing,MDX,58880,80960,'Single Vehicle Collision',Ambulance,7360,14720,prof-specialty,N
+'Total Loss',skydiving,C300,59310,79080,'Multi-vehicle Collision',Other,13180,6590,craft-repair,N
+'Minor Damage',paintball,ML350,4960,6820,'Vehicle Theft',None,620,1240,adm-clerical,N
+'Total Loss',sleeping,Pathfinder,45520,62590,'Multi-vehicle Collision',Fire,11380,5690,armed-forces,N
+'Major Damage',dancing,MDX,39300,52400,'Single Vehicle Collision',Other,6550,6550,sales,Y
+'Major Damage',basketball,Jetta,46240,63580,'Multi-vehicle Collision',Ambulance,11560,5780,tech-support,N
+'Minor Damage',reading,Ultima,49120,61400,'Multi-vehicle Collision',Police,6140,6140,priv-house-serv,N
+'Minor Damage',paintball,Neon,3290,4700,'Parked Car',None,470,940,adm-clerical,Y
+'Total Loss',hiking,X5,47180,74140,'Single Vehicle Collision',Fire,13480,13480,prof-specialty,N
+'Major Damage',reading,Jetta,62370,83160,'Single Vehicle Collision',Other,13860,6930,other-service,N
+'Trivial Damage',paintball,E400,8300,10790,'Parked Car',Police,830,1660,farming-fishing,N
+'Major Damage',paintball,92x,30590,48070,'Multi-vehicle Collision',Police,8740,8740,prof-specialty,N
+'Minor Damage',golf,Impreza,34020,51030,'Multi-vehicle Collision',Ambulance,11340,5670,protective-serv,N
+'Minor Damage',yachting,Civic,37870,43280,'Single Vehicle Collision',Fire,5410,0,prof-specialty,Y
+'Major Damage',paintball,Forrestor,53480,76400,'Single Vehicle Collision',Fire,7640,15280,sales,N
+'Total Loss',board-games,A5,48020,75460,'Single Vehicle Collision',Ambulance,13720,13720,prof-specialty,N
+'Major Damage',polo,F150,48300,69000,'Multi-vehicle Collision',Other,6900,13800,armed-forces,Y
+'Minor Damage',golf,TL,6480,8640,'Vehicle Theft',Police,720,1440,tech-support,N
+'Minor Damage',dancing,X6,42770,67210,'Multi-vehicle Collision',Ambulance,12220,12220,armed-forces,N
+'Total Loss',basketball,Jetta,34000,42500,'Multi-vehicle Collision',Ambulance,4250,4250,transport-moving,N
+'Minor Damage',basketball,RSX,64800,86400,'Single Vehicle Collision',Fire,7200,14400,armed-forces,N
+'Minor Damage',chess,RAM,2940,4620,'Vehicle Theft',Police,840,840,handlers-cleaners,Y
+'Trivial Damage',camping,CRV,5040,6930,'Parked Car',Police,1260,630,tech-support,N
+'Minor Damage',hiking,95,25020,41700,'Multi-vehicle Collision',Other,8340,8340,sales,N
+'Major Damage',board-games,Jetta,49210,77330,'Single Vehicle Collision',Other,14060,14060,transport-moving,Y
+'Trivial Damage',sleeping,F150,3600,4950,'Vehicle Theft',Police,450,900,other-service,N
+'Minor Damage',polo,TL,3440,5160,'Vehicle Theft',Police,860,860,craft-repair,N
+'Total Loss',yachting,95,19110,24570,'Multi-vehicle Collision',Fire,2730,2730,exec-managerial,Y
+'Minor Damage',movies,Camry,39040,53680,'Multi-vehicle Collision',Ambulance,9760,4880,craft-repair,N
+'Total Loss',bungie-jumping,Malibu,35100,42900,'Multi-vehicle Collision',Police,3900,3900,farming-fishing,N
+'Minor Damage',chess,Escape,58870,84100,'Single Vehicle Collision',Fire,8410,16820,protective-serv,Y
+'Total Loss',dancing,Fusion,47880,61560,'Single Vehicle Collision',Fire,6840,6840,adm-clerical,N
+'Minor Damage',hiking,RAM,33180,44240,'Single Vehicle Collision',Police,5530,5530,other-service,N
+'Minor Damage',hiking,'Grand Cherokee',40390,57700,'Multi-vehicle Collision',Ambulance,5770,11540,protective-serv,N
+'Minor Damage',exercise,92x,74790,108030,'Single Vehicle Collision',Other,16620,16620,exec-managerial,N
+'Minor Damage',dancing,Highlander,38010,54300,'Single Vehicle Collision',Fire,5430,10860,exec-managerial,N
+'Major Damage',movies,Fusion,21520,32280,'Multi-vehicle Collision',Ambulance,5380,5380,craft-repair,Y
+'Total Loss',camping,Malibu,59220,84600,'Multi-vehicle Collision',Other,8460,16920,machine-op-inspct,N
+'Total Loss',camping,'3 Series',55760,69700,'Single Vehicle Collision',Other,6970,6970,craft-repair,N
+'Total Loss',movies,Jetta,25480,36400,'Multi-vehicle Collision',Ambulance,7280,3640,prof-specialty,N
+'Minor Damage',paintball,Wrangler,28140,37520,'Multi-vehicle Collision',Police,4690,4690,adm-clerical,N
+'Major Damage',paintball,RAM,50330,79090,'Multi-vehicle Collision',Ambulance,14380,14380,other-service,N
+'Major Damage',board-games,ML350,45180,67770,'Single Vehicle Collision',Other,15060,7530,farming-fishing,Y
+'Total Loss',chess,Silverado,33180,47400,'Single Vehicle Collision',Other,4740,9480,tech-support,Y
+'Total Loss',skydiving,A3,49770,71100,'Single Vehicle Collision',Other,14220,7110,other-service,N
+'Minor Damage',dancing,M5,48580,69400,'Single Vehicle Collision',Police,6940,13880,other-service,N
+'Major Damage',board-games,93,40000,55000,'Multi-vehicle Collision',Other,10000,5000,transport-moving,Y
+'Total Loss',polo,Highlander,35370,51090,'Multi-vehicle Collision',Police,7860,7860,machine-op-inspct,N
+'Major Damage',camping,Civic,38520,64200,'Single Vehicle Collision',Fire,19260,6420,machine-op-inspct,Y
+'Total Loss',base-jumping,Fusion,42840,67320,'Single Vehicle Collision',Other,12240,12240,sales,N
+'Major Damage',movies,A5,55360,76120,'Multi-vehicle Collision',Other,13840,6920,protective-serv,N
+'Minor Damage',movies,Fusion,58860,85020,'Multi-vehicle Collision',Ambulance,13080,13080,farming-fishing,N
+'Minor Damage',polo,Corolla,43330,68090,'Multi-vehicle Collision',Fire,12380,12380,protective-serv,N
+'Trivial Damage',exercise,Pathfinder,4690,6030,'Parked Car',Police,670,670,priv-house-serv,N
+'Minor Damage',yachting,Malibu,3570,5100,'Vehicle Theft',None,510,1020,machine-op-inspct,N
+'Trivial Damage',yachting,Jetta,3570,4590,'Vehicle Theft',Police,510,510,sales,N
+'Major Damage',yachting,Tahoe,50680,72400,'Multi-vehicle Collision',Other,14480,7240,exec-managerial,Y
+'Major Damage',skydiving,ML350,49630,70900,'Single Vehicle Collision',Fire,7090,14180,other-service,N
+'Total Loss',hiking,93,52080,65100,'Multi-vehicle Collision',Other,6510,6510,priv-house-serv,N
+'Total Loss',chess,Escape,49980,64260,'Multi-vehicle Collision',Ambulance,14280,0,handlers-cleaners,N
+'Major Damage',yachting,CRV,50890,79970,'Single Vehicle Collision',Ambulance,21810,7270,armed-forces,Y
+'Total Loss',bungie-jumping,Tahoe,44030,56610,'Single Vehicle Collision',Police,6290,6290,machine-op-inspct,N
+'Major Damage',polo,Highlander,69210,84590,'Single Vehicle Collision',Fire,7690,7690,craft-repair,Y
+'Major Damage',sleeping,ML350,44520,66780,'Multi-vehicle Collision',Fire,14840,7420,sales,N
+'Major Damage',exercise,Escape,52000,58500,'Single Vehicle Collision',Police,6500,0,farming-fishing,N
+'Trivial Damage',golf,RAM,4000,5000,'Parked Car',Police,500,500,prof-specialty,N
+'Trivial Damage',chess,E400,3500,5000,'Parked Car',Police,1000,500,priv-house-serv,Y
+'Major Damage',camping,92x,36300,54450,'Multi-vehicle Collision',Ambulance,12100,6050,sales,N
+'Major Damage',bungie-jumping,93,48160,61920,'Multi-vehicle Collision',Police,6880,6880,handlers-cleaners,N
+'Minor Damage',cross-fit,Pathfinder,34960,43700,'Single Vehicle Collision',Ambulance,4370,4370,exec-managerial,Y
+'Minor Damage',bungie-jumping,Escape,49840,64080,'Single Vehicle Collision',Other,7120,7120,machine-op-inspct,N
+'Total Loss',chess,Jetta,35000,55000,'Single Vehicle Collision',Other,10000,10000,sales,Y
+'Trivial Damage',video-games,Camry,3850,4400,'Vehicle Theft',Police,550,0,adm-clerical,N
+'Minor Damage',movies,Highlander,53730,71640,'Multi-vehicle Collision',Police,11940,5970,armed-forces,N
+'Minor Damage',reading,MDX,48020,61740,'Single Vehicle Collision',Other,6860,6860,machine-op-inspct,N
+'Total Loss',golf,A3,46000,57500,'Single Vehicle Collision',Ambulance,5750,5750,priv-house-serv,N
+'Minor Damage',reading,RSX,6090,8700,'Parked Car',Police,1740,870,exec-managerial,N
+'Total Loss',polo,Jetta,53970,77100,'Multi-vehicle Collision',Police,7710,15420,adm-clerical,N
+'Minor Damage',dancing,Neon,46200,59400,'Single Vehicle Collision',Police,6600,6600,priv-house-serv,N
+'Minor Damage',kayaking,Corolla,39920,54890,'Multi-vehicle Collision',Fire,4990,9980,machine-op-inspct,N
+'Minor Damage',kayaking,Tahoe,53840,74030,'Multi-vehicle Collision',Other,13460,6730,exec-managerial,N
+'Total Loss',chess,X5,39130,61490,'Single Vehicle Collision',Other,11180,11180,adm-clerical,N
+'Minor Damage',board-games,Passat,59670,79560,'Multi-vehicle Collision',Police,13260,6630,handlers-cleaners,N
+'Minor Damage',yachting,Camry,3920,4900,'Parked Car',Police,490,490,sales,N
+'Total Loss',paintball,Pathfinder,49490,77770,'Multi-vehicle Collision',Other,14140,14140,tech-support,N
+'Major Damage',board-games,Maxima,52290,74700,'Multi-vehicle Collision',Fire,14940,7470,transport-moving,Y
+'Minor Damage',sleeping,Passat,32480,40600,'Multi-vehicle Collision',Police,4060,4060,tech-support,N
+'Total Loss',video-games,Wrangler,25150,45270,'Single Vehicle Collision',Ambulance,10060,10060,farming-fishing,N
+'Minor Damage',kayaking,93,34240,47080,'Multi-vehicle Collision',Ambulance,8560,4280,machine-op-inspct,N
+'Minor Damage',chess,Passat,32560,40700,'Single Vehicle Collision',Police,4070,4070,machine-op-inspct,Y
+'Minor Damage',polo,F150,25200,34650,'Single Vehicle Collision',Police,3150,6300,transport-moving,N
+'Trivial Damage',camping,'Grand Cherokee',2400,3200,'Parked Car',Police,400,400,protective-serv,N
+'Major Damage',yachting,92x,57440,78980,'Single Vehicle Collision',Fire,14360,7180,machine-op-inspct,Y
+'Minor Damage',reading,Ultima,4480,6160,'Parked Car',None,1120,560,sales,N
+'Major Damage',hiking,E400,62000,85250,'Single Vehicle Collision',Ambulance,7750,15500,machine-op-inspct,N
+'Major Damage',camping,Neon,54630,72840,'Multi-vehicle Collision',Fire,6070,12140,sales,N
+'Trivial Damage',base-jumping,Camry,3850,6050,'Parked Car',Police,1100,1100,exec-managerial,N
+'Major Damage',hiking,X6,63920,87890,'Single Vehicle Collision',Fire,7990,15980,protective-serv,Y
+'Total Loss',chess,F150,44000,60500,'Multi-vehicle Collision',Other,5500,11000,craft-repair,Y
+'Minor Damage',kayaking,Malibu,56140,88220,'Multi-vehicle Collision',Fire,16040,16040,machine-op-inspct,N
+'Total Loss',video-games,MDX,39040,53680,'Multi-vehicle Collision',Other,4880,9760,prof-specialty,N
+'Minor Damage',golf,MDX,43040,53800,'Single Vehicle Collision',Fire,5380,5380,transport-moving,N
+'Major Damage',dancing,E400,40770,54360,'Single Vehicle Collision',Police,9060,4530,craft-repair,Y
+'Major Damage',bungie-jumping,Camry,39520,54340,'Single Vehicle Collision',Police,4940,9880,handlers-cleaners,N
+'Trivial Damage',chess,Tahoe,2080,2860,'Parked Car',None,260,520,craft-repair,Y
+'Minor Damage',polo,95,4270,5490,'Vehicle Theft',Police,1220,0,craft-repair,N
+'Trivial Damage',dancing,Impreza,5360,7370,'Vehicle Theft',Police,1340,670,craft-repair,N
+'Major Damage',chess,A3,40640,50800,'Multi-vehicle Collision',Ambulance,5080,5080,priv-house-serv,Y
+'Minor Damage',video-games,Ultima,31140,41520,'Multi-vehicle Collision',Fire,5190,5190,adm-clerical,N
+'Total Loss',movies,RAM,65200,89650,'Single Vehicle Collision',Police,16300,8150,armed-forces,N
+'Total Loss',base-jumping,Legacy,39690,39690,'Multi-vehicle Collision',Police,0,0,other-service,N
+'Major Damage',golf,92x,50940,62260,'Single Vehicle Collision',Ambulance,5660,5660,exec-managerial,N
+'Major Damage',paintball,A3,37760,51920,'Single Vehicle Collision',Police,4720,9440,prof-specialty,Y
+'Minor Damage',bungie-jumping,Jetta,38880,53460,'Single Vehicle Collision',Other,4860,9720,armed-forces,N
+'Total Loss',golf,CRV,45680,57100,'Multi-vehicle Collision',Fire,5710,5710,adm-clerical,N
+'Total Loss',yachting,Neon,56320,77440,'Multi-vehicle Collision',Ambulance,7040,14080,exec-managerial,N
+'Minor Damage',bungie-jumping,Forrestor,47810,68300,'Single Vehicle Collision',Ambulance,13660,6830,craft-repair,N
+'Trivial Damage',base-jumping,CRV,3680,5060,'Parked Car',None,920,460,other-service,N
+'Total Loss',chess,RAM,39600,59400,'Multi-vehicle Collision',Ambulance,13200,6600,tech-support,Y
+'Major Damage',cross-fit,Escape,54390,69930,'Multi-vehicle Collision',Ambulance,15540,0,transport-moving,Y
+'Minor Damage',board-games,Wrangler,54390,77700,'Multi-vehicle Collision',Police,15540,7770,handlers-cleaners,N
+'Major Damage',yachting,A5,43750,68750,'Multi-vehicle Collision',Other,12500,12500,prof-specialty,Y
+'Minor Damage',movies,Wrangler,57960,91080,'Multi-vehicle Collision',Police,16560,16560,adm-clerical,N
+'Minor Damage',golf,A5,36270,48360,'Single Vehicle Collision',Other,8060,4030,craft-repair,N
+'Major Damage',kayaking,F150,76000,95000,'Single Vehicle Collision',Other,9500,9500,handlers-cleaners,N
+'Trivial Damage',yachting,F150,2730,3900,'Vehicle Theft',Police,390,780,machine-op-inspct,N
+'Minor Damage',cross-fit,'Grand Cherokee',41580,59400,'Multi-vehicle Collision',Other,5940,11880,transport-moving,Y
+'Minor Damage',camping,Maxima,46830,60210,'Single Vehicle Collision',Fire,6690,6690,machine-op-inspct,N
+'Minor Damage',video-games,Legacy,30520,43600,'Single Vehicle Collision',Ambulance,4360,8720,sales,N
+'Total Loss',sleeping,Wrangler,43960,62800,'Multi-vehicle Collision',Police,12560,6280,adm-clerical,N
+'Major Damage',skydiving,Neon,41650,59500,'Single Vehicle Collision',Ambulance,5950,11900,farming-fishing,N
+'Total Loss',skydiving,CRV,41580,53460,'Multi-vehicle Collision',Police,5940,5940,armed-forces,N
+'Total Loss',reading,95,26530,41690,'Multi-vehicle Collision',Ambulance,7580,7580,adm-clerical,N
+'Minor Damage',paintball,TL,44170,63100,'Single Vehicle Collision',Ambulance,12620,6310,prof-specialty,N
+'Total Loss',chess,E400,47160,62880,'Single Vehicle Collision',Ambulance,10480,5240,priv-house-serv,Y
+'Major Damage',paintball,X6,46400,75400,'Multi-vehicle Collision',Fire,11600,17400,sales,Y
+'Total Loss',hiking,A5,33600,46200,'Single Vehicle Collision',Ambulance,8400,4200,machine-op-inspct,N
+'Major Damage',sleeping,Camry,46800,58500,'Single Vehicle Collision',Ambulance,5850,5850,machine-op-inspct,N
+'Major Damage',bungie-jumping,Maxima,44160,66240,'Multi-vehicle Collision',Other,11040,11040,transport-moving,N
+'Total Loss',camping,Wrangler,49080,65440,'Multi-vehicle Collision',Ambulance,8180,8180,craft-repair,N
+'Minor Damage',exercise,F150,42800,64200,'Single Vehicle Collision',Fire,10700,10700,sales,N
+'Minor Damage',dancing,RAM,24240,32320,'Multi-vehicle Collision',Ambulance,4040,4040,other-service,N
+'Major Damage',golf,Neon,26040,33480,'Single Vehicle Collision',Police,3720,3720,farming-fishing,N
+'Trivial Damage',polo,Corolla,2880,4320,'Vehicle Theft',None,960,480,adm-clerical,N
+'Trivial Damage',exercise,Wrangler,2940,4200,'Vehicle Theft',Police,420,840,tech-support,N
+'Minor Damage',sleeping,93,42160,57970,'Multi-vehicle Collision',Ambulance,5270,10540,adm-clerical,N
+'Trivial Damage',paintball,93,3360,4320,'Parked Car',None,960,0,other-service,N
+'Minor Damage',reading,Escape,48510,69300,'Multi-vehicle Collision',Fire,6930,13860,machine-op-inspct,N
+'Minor Damage',camping,Neon,24360,32480,'Multi-vehicle Collision',Police,4060,4060,farming-fishing,N
+'Total Loss',hiking,TL,47040,60480,'Single Vehicle Collision',Police,6720,6720,machine-op-inspct,N
+'Trivial Damage',polo,CRV,1760,2640,'Parked Car',Police,440,440,armed-forces,N
+'Trivial Damage',skydiving,Passat,4400,6050,'Parked Car',Police,1100,550,other-service,N
+'Total Loss',chess,92x,34160,42700,'Multi-vehicle Collision',Ambulance,4270,4270,handlers-cleaners,Y
+'Major Damage',reading,MDX,29280,40260,'Single Vehicle Collision',Ambulance,7320,3660,prof-specialty,Y
+'Major Damage',polo,Silverado,35000,50000,'Single Vehicle Collision',Fire,10000,5000,priv-house-serv,N
+'Trivial Damage',golf,92x,2880,3840,'Parked Car',None,320,640,tech-support,N
+'Minor Damage',video-games,95,61650,95900,'Multi-vehicle Collision',Police,20550,13700,transport-moving,N
+'Minor Damage',bungie-jumping,A5,37440,56160,'Multi-vehicle Collision',Ambulance,12480,6240,exec-managerial,N
+'Major Damage',sleeping,92x,45840,63030,'Single Vehicle Collision',Police,11460,5730,armed-forces,N
+'Minor Damage',skydiving,X6,46160,63470,'Single Vehicle Collision',Police,11540,5770,handlers-cleaners,N
+'Major Damage',movies,X6,32320,44440,'Single Vehicle Collision',Police,4040,8080,tech-support,Y
+'Minor Damage',paintball,'Grand Cherokee',4200,6600,'Parked Car',Police,1200,1200,prof-specialty,N
+'Minor Damage',kayaking,Escape,57900,77200,'Multi-vehicle Collision',Ambulance,9650,9650,machine-op-inspct,N
+'Total Loss',reading,A3,45600,57000,'Multi-vehicle Collision',Other,11400,0,protective-serv,N
+'Trivial Damage',movies,Accord,2100,2700,'Vehicle Theft',Police,300,300,farming-fishing,N
+'Total Loss',kayaking,Jetta,34400,47300,'Single Vehicle Collision',Police,8600,4300,transport-moving,N
+'Major Damage',sleeping,Maxima,40080,55110,'Single Vehicle Collision',Other,10020,5010,tech-support,N
+'Trivial Damage',reading,E400,3360,4320,'Vehicle Theft',Police,480,480,other-service,N
+'Total Loss',video-games,95,51570,68760,'Multi-vehicle Collision',Police,5730,11460,transport-moving,Y
+'Major Damage',paintball,M5,52080,74400,'Multi-vehicle Collision',Other,7440,14880,tech-support,Y
+'Major Damage',base-jumping,E400,28240,35300,'Multi-vehicle Collision',Fire,3530,3530,exec-managerial,Y
+'Minor Damage',camping,Passat,1680,2640,'Parked Car',None,480,480,tech-support,N
+'Total Loss',cross-fit,ML350,46300,60190,'Multi-vehicle Collision',Ambulance,9260,4630,sales,Y
+'Major Damage',exercise,Malibu,30240,41580,'Multi-vehicle Collision',Fire,7560,3780,machine-op-inspct,Y
+'Minor Damage',cross-fit,MDX,46800,58500,'Single Vehicle Collision',Ambulance,0,11700,tech-support,Y
+'Minor Damage',movies,Ultima,59490,79320,'Single Vehicle Collision',Fire,6610,13220,handlers-cleaners,N
+'Minor Damage',chess,Escape,67590,82610,'Single Vehicle Collision',Ambulance,7510,7510,farming-fishing,Y
+'Total Loss',video-games,RAM,45850,78600,'Multi-vehicle Collision',Ambulance,19650,13100,priv-house-serv,Y
+'Minor Damage',chess,Jetta,39970,51390,'Single Vehicle Collision',Ambulance,5710,5710,handlers-cleaners,Y
+'Major Damage',exercise,F150,56160,70200,'Single Vehicle Collision',Ambulance,7020,7020,other-service,Y
+'Minor Damage',base-jumping,Wrangler,2940,4900,'Parked Car',None,1470,490,protective-serv,N
+'Major Damage',chess,92x,49860,66480,'Multi-vehicle Collision',Other,11080,5540,protective-serv,Y
+'Major Damage',reading,Tahoe,36640,50380,'Single Vehicle Collision',Fire,9160,4580,transport-moving,Y
+'Major Damage',paintball,E400,44550,64350,'Single Vehicle Collision',Fire,9900,9900,handlers-cleaners,N
+'Major Damage',hiking,Silverado,38780,55400,'Multi-vehicle Collision',Ambulance,11080,5540,prof-specialty,Y
+'Total Loss',basketball,Neon,34930,49900,'Single Vehicle Collision',Other,9980,4990,prof-specialty,N
+'Minor Damage',golf,TL,49920,74880,'Multi-vehicle Collision',Ambulance,12480,12480,priv-house-serv,N
+'Minor Damage',exercise,A3,73260,105820,'Single Vehicle Collision',Other,16280,16280,exec-managerial,N
+'Trivial Damage',golf,Jetta,5200,7150,'Vehicle Theft',Police,650,1300,prof-specialty,N
+'Total Loss',dancing,RAM,33480,55800,'Single Vehicle Collision',Ambulance,11160,11160,craft-repair,N
+'Trivial Damage',kayaking,RAM,3710,5830,'Parked Car',None,1060,1060,sales,N
+'Major Damage',polo,Forrestor,51540,85900,'Single Vehicle Collision',Ambulance,17180,17180,handlers-cleaners,Y
+'Minor Damage',base-jumping,MDX,4740,7110,'Parked Car',Police,1580,790,prof-specialty,N
+'Total Loss',kayaking,Tahoe,26880,36960,'Multi-vehicle Collision',Fire,3360,6720,prof-specialty,N
+'Minor Damage',movies,Neon,51520,64400,'Multi-vehicle Collision',Police,6440,6440,tech-support,N
+'Minor Damage',sleeping,Tahoe,1440,1920,'Parked Car',None,0,480,adm-clerical,N
+'Major Damage',polo,Legacy,62640,86130,'Single Vehicle Collision',Police,7830,15660,farming-fishing,Y
+'Major Damage',cross-fit,Silverado,59760,82170,'Single Vehicle Collision',Fire,7470,14940,protective-serv,Y
+'Major Damage',camping,Legacy,35210,50300,'Single Vehicle Collision',Fire,5030,10060,farming-fishing,Y
+'Major Damage',camping,Forrestor,30940,44200,'Single Vehicle Collision',Police,8840,4420,prof-specialty,N
+'Major Damage',polo,Highlander,54540,66660,'Single Vehicle Collision',Ambulance,6060,6060,transport-moving,N
+'Total Loss',bungie-jumping,92x,56960,78320,'Single Vehicle Collision',Ambulance,14240,7120,prof-specialty,N
+'Total Loss',skydiving,RAM,72720,105040,'Single Vehicle Collision',Fire,16160,16160,craft-repair,N
+'Minor Damage',basketball,RSX,40560,50700,'Single Vehicle Collision',Fire,5070,5070,adm-clerical,N
+'Total Loss',exercise,Wrangler,34140,51210,'Multi-vehicle Collision',Fire,5690,11380,exec-managerial,N
+'Total Loss',dancing,Jetta,34560,51840,'Multi-vehicle Collision',Fire,8640,8640,other-service,N
+'Total Loss',exercise,Pathfinder,42240,52800,'Multi-vehicle Collision',Ambulance,5280,5280,exec-managerial,N
+'Minor Damage',kayaking,Civic,32200,55200,'Single Vehicle Collision',Fire,13800,9200,prof-specialty,N
+'Minor Damage',camping,Malibu,6300,9100,'Vehicle Theft',None,1400,1400,sales,N
+'Minor Damage',reading,Legacy,47320,67600,'Multi-vehicle Collision',Other,6760,13520,craft-repair,N
+'Minor Damage',golf,X5,27200,40800,'Single Vehicle Collision',Other,6800,6800,adm-clerical,N
+'Major Damage',board-games,Passat,58500,84500,'Multi-vehicle Collision',Other,13000,13000,machine-op-inspct,Y
+'Major Damage',hiking,Highlander,52080,71610,'Multi-vehicle Collision',Other,6510,13020,exec-managerial,Y
+'Major Damage',yachting,RAM,42420,60600,'Multi-vehicle Collision',Other,12120,6060,sales,Y
+'Major Damage',reading,C300,54160,81240,'Multi-vehicle Collision',Fire,20310,6770,exec-managerial,Y
+'Total Loss',bungie-jumping,A3,20510,29300,'Multi-vehicle Collision',Fire,5860,2930,armed-forces,N
+'Total Loss',skydiving,RAM,55600,76450,'Multi-vehicle Collision',Fire,13900,6950,sales,N
+'Major Damage',cross-fit,Wrangler,34580,49400,'Multi-vehicle Collision',Fire,4940,9880,machine-op-inspct,N
+'Total Loss',kayaking,F150,57610,90530,'Single Vehicle Collision',Ambulance,16460,16460,tech-support,N
+'Minor Damage',movies,E400,5840,8030,'Vehicle Theft',Police,730,1460,priv-house-serv,N
+'Minor Damage',movies,TL,51120,63900,'Single Vehicle Collision',Fire,6390,6390,handlers-cleaners,N
+'Minor Damage',golf,Tahoe,28980,38640,'Multi-vehicle Collision',Fire,4830,4830,machine-op-inspct,N
+'Total Loss',movies,E400,27660,41490,'Multi-vehicle Collision',Other,4610,9220,sales,N
+'Minor Damage',hiking,Maxima,57520,79090,'Multi-vehicle Collision',Fire,7190,14380,protective-serv,N
+'Major Damage',cross-fit,Neon,61530,87900,'Multi-vehicle Collision',Police,8790,17580,machine-op-inspct,N
+'Total Loss',yachting,Wrangler,42720,53400,'Single Vehicle Collision',Ambulance,5340,5340,prof-specialty,N
+'Total Loss',basketball,MDX,33110,52030,'Single Vehicle Collision',Fire,9460,9460,machine-op-inspct,N
+'Minor Damage',bungie-jumping,93,59680,82060,'Single Vehicle Collision',Ambulance,7460,14920,prof-specialty,N
+'Minor Damage',hiking,Maxima,32240,48360,'Single Vehicle Collision',Ambulance,8060,8060,protective-serv,N
+'Minor Damage',kayaking,Maxima,34860,52290,'Multi-vehicle Collision',Other,11620,5810,armed-forces,N
+'Major Damage',paintball,Wrangler,43400,68200,'Multi-vehicle Collision',Police,12400,12400,protective-serv,Y
+'Major Damage',basketball,Wrangler,40500,60750,'Multi-vehicle Collision',Other,6750,13500,craft-repair,Y
+'Major Damage',paintball,Passat,41720,65560,'Multi-vehicle Collision',Fire,11920,11920,adm-clerical,Y
+'Minor Damage',basketball,C300,44730,70290,'Multi-vehicle Collision',Police,12780,12780,handlers-cleaners,N
+'Total Loss',hiking,Forrestor,35000,45000,'Single Vehicle Collision',Ambulance,5000,5000,adm-clerical,N
+'Total Loss',sleeping,Impreza,43260,61800,'Multi-vehicle Collision',Fire,6180,12360,prof-specialty,N
+'Major Damage',movies,Wrangler,46960,64570,'Multi-vehicle Collision',Ambulance,11740,5870,transport-moving,N
+'Minor Damage',reading,Forrestor,49350,70500,'Single Vehicle Collision',Other,14100,7050,adm-clerical,N
+'Total Loss',movies,A5,34740,57900,'Multi-vehicle Collision',Police,5790,17370,armed-forces,N
+'Minor Damage',video-games,Jetta,42080,57860,'Multi-vehicle Collision',Fire,10520,5260,prof-specialty,N
+'Minor Damage',polo,Silverado,25200,37800,'Single Vehicle Collision',Fire,4200,8400,transport-moving,N
+'Total Loss',hiking,Highlander,50640,63300,'Single Vehicle Collision',Ambulance,6330,6330,tech-support,N
+'Total Loss',paintball,93,30940,44200,'Multi-vehicle Collision',Ambulance,4420,8840,farming-fishing,N
+'Minor Damage',yachting,Camry,24640,31680,'Multi-vehicle Collision',Police,3520,3520,machine-op-inspct,N
+'Trivial Damage',kayaking,A3,70,100,'Parked Car',Police,20,10,tech-support,N
+'Minor Damage',bungie-jumping,Passat,43820,56340,'Single Vehicle Collision',Fire,6260,6260,protective-serv,N
+'Total Loss',skydiving,Neon,57060,69740,'Multi-vehicle Collision',Police,6340,6340,sales,N
+'Total Loss',exercise,Jetta,40320,60480,'Multi-vehicle Collision',Police,15120,5040,priv-house-serv,N
+'Minor Damage',skydiving,Ultima,60660,80880,'Multi-vehicle Collision',Police,13480,6740,tech-support,N
+'Total Loss',dancing,Legacy,35920,49390,'Single Vehicle Collision',Fire,4490,8980,handlers-cleaners,N
+'Minor Damage',video-games,RAM,46240,69360,'Single Vehicle Collision',Ambulance,11560,11560,armed-forces,N
+'Minor Damage',board-games,Malibu,2380,3740,'Vehicle Theft',None,680,680,tech-support,N
+'Trivial Damage',bungie-jumping,Ultima,3680,5060,'Parked Car',None,920,460,other-service,N
+'Total Loss',chess,X5,26080,35860,'Multi-vehicle Collision',Police,6520,3260,machine-op-inspct,Y
+'Major Damage',cross-fit,Fusion,38500,50050,'Multi-vehicle Collision',Ambulance,3850,7700,machine-op-inspct,Y
+'Minor Damage',dancing,Camry,42960,59070,'Multi-vehicle Collision',Fire,5370,10740,priv-house-serv,N
+'Minor Damage',board-games,Neon,22120,28440,'Multi-vehicle Collision',Fire,3160,3160,adm-clerical,N
+'Major Damage',hiking,Civic,28980,45540,'Single Vehicle Collision',Fire,8280,8280,tech-support,Y
+'Minor Damage',reading,Passat,27090,38700,'Single Vehicle Collision',Fire,3870,7740,sales,N
+'Trivial Damage',paintball,Pathfinder,4240,5830,'Parked Car',None,530,1060,tech-support,N
+'Total Loss',cross-fit,X6,42930,57240,'Single Vehicle Collision',Other,9540,4770,prof-specialty,Y
+'Total Loss',exercise,Legacy,33600,46200,'Multi-vehicle Collision',Police,8400,4200,armed-forces,N
+'Total Loss',kayaking,Camry,46160,57700,'Single Vehicle Collision',Ambulance,5770,5770,farming-fishing,N
+'Minor Damage',hiking,95,42120,56160,'Multi-vehicle Collision',Fire,9360,4680,transport-moving,N
+'Total Loss',movies,'Grand Cherokee',33300,44400,'Multi-vehicle Collision',Fire,5550,5550,adm-clerical,N
+'Major Damage',reading,E400,67440,92730,'Single Vehicle Collision',Ambulance,8430,16860,machine-op-inspct,Y
+'Minor Damage',paintball,Corolla,21490,30700,'Single Vehicle Collision',Fire,6140,3070,craft-repair,N
+'Major Damage',yachting,Camry,39620,56600,'Single Vehicle Collision',Fire,5660,11320,armed-forces,N
+'Trivial Damage',dancing,A3,2640,3960,'Parked Car',None,660,660,armed-forces,N
+'Minor Damage',video-games,MDX,24360,34800,'Single Vehicle Collision',Police,6960,3480,transport-moving,N
+'Minor Damage',kayaking,Tahoe,63600,79500,'Multi-vehicle Collision',Other,7950,7950,armed-forces,N
+'Total Loss',basketball,Malibu,44800,56000,'Single Vehicle Collision',Police,5600,5600,prof-specialty,N
+'Minor Damage',chess,Jetta,56980,73260,'Single Vehicle Collision',Ambulance,0,16280,machine-op-inspct,Y
+'Trivial Damage',base-jumping,Camry,3600,4950,'Parked Car',None,450,900,craft-repair,N
+'Minor Damage',kayaking,95,33600,48000,'Single Vehicle Collision',Ambulance,9600,4800,machine-op-inspct,N
+'Major Damage',dancing,Pathfinder,36540,52200,'Single Vehicle Collision',Fire,5220,10440,prof-specialty,N
+'Minor Damage',dancing,A3,49200,73800,'Multi-vehicle Collision',Ambulance,12300,12300,protective-serv,N
+'Total Loss',base-jumping,A3,54740,78200,'Single Vehicle Collision',Fire,7820,15640,protective-serv,N
+'Major Damage',bungie-jumping,93,32200,55200,'Single Vehicle Collision',Ambulance,9200,13800,other-service,Y
+'Total Loss',kayaking,Fusion,44380,57060,'Multi-vehicle Collision',Other,6340,6340,handlers-cleaners,N
+'Minor Damage',dancing,Malibu,3640,4680,'Vehicle Theft',None,520,520,protective-serv,N
+'Minor Damage',cross-fit,MDX,42480,53100,'Single Vehicle Collision',Ambulance,5310,5310,transport-moving,Y
+'Minor Damage',video-games,MDX,2560,3520,'Vehicle Theft',None,320,640,prof-specialty,N
+'Total Loss',dancing,Maxima,43740,72900,'Multi-vehicle Collision',Ambulance,14580,14580,tech-support,N
+'Total Loss',camping,Passat,49490,70700,'Single Vehicle Collision',Police,14140,7070,craft-repair,N
+'Minor Damage',bungie-jumping,Pathfinder,43760,60170,'Multi-vehicle Collision',Other,10940,5470,adm-clerical,N
+'Major Damage',paintball,Fusion,54400,74800,'Single Vehicle Collision',Other,6800,13600,exec-managerial,Y
+'Trivial Damage',paintball,Malibu,2870,4100,'Vehicle Theft',Police,410,820,prof-specialty,N
+'Minor Damage',camping,RAM,44720,61490,'Single Vehicle Collision',Other,11180,5590,prof-specialty,N
+'Trivial Damage',basketball,A5,5040,7200,'Vehicle Theft',None,1440,720,other-service,N
+'Minor Damage',polo,Pathfinder,32800,45100,'Multi-vehicle Collision',Fire,4100,8200,machine-op-inspct,N
+'Minor Damage',camping,Civic,48480,66660,'Single Vehicle Collision',Police,6060,12120,craft-repair,N
+'Major Damage',basketball,Jetta,53480,76400,'Single Vehicle Collision',Police,7640,15280,prof-specialty,Y
+'Total Loss',kayaking,F150,37100,58300,'Single Vehicle Collision',Ambulance,10600,10600,craft-repair,N
+'Total Loss',skydiving,Passat,41680,57310,'Single Vehicle Collision',Police,10420,5210,transport-moving,N
+'Minor Damage',movies,Impreza,41300,53100,'Single Vehicle Collision',Fire,5900,5900,priv-house-serv,N
+'Total Loss',paintball,Forrestor,52290,74700,'Multi-vehicle Collision',Ambulance,7470,14940,priv-house-serv,N
+'Major Damage',golf,A5,42350,60500,'Multi-vehicle Collision',Fire,6050,12100,prof-specialty,N
+'Total Loss',chess,Wrangler,61760,84920,'Multi-vehicle Collision',Other,15440,7720,protective-serv,Y
+'Total Loss',hiking,Neon,44400,61050,'Single Vehicle Collision',Police,11100,5550,adm-clerical,N
+'Major Damage',movies,A5,50240,69080,'Multi-vehicle Collision',Police,6280,12560,exec-managerial,Y
+'Minor Damage',paintball,Pathfinder,3420,4560,'Vehicle Theft',None,380,760,prof-specialty,N
+'Total Loss',skydiving,F150,45200,67800,'Multi-vehicle Collision',Police,11300,11300,machine-op-inspct,N
+'Minor Damage',reading,Legacy,3920,5600,'Vehicle Theft',Police,560,1120,other-service,N
+'Minor Damage',basketball,ML350,6300,9000,'Vehicle Theft',None,1800,900,other-service,N
+'Total Loss',kayaking,Pathfinder,56880,85320,'Single Vehicle Collision',Police,7110,21330,transport-moving,N
+'Trivial Damage',golf,A5,4320,5940,'Vehicle Theft',None,1080,540,machine-op-inspct,Y
+'Major Damage',movies,M5,37360,51370,'Multi-vehicle Collision',Fire,4670,9340,armed-forces,Y
+'Major Damage',reading,Neon,36120,51600,'Single Vehicle Collision',Police,5160,10320,protective-serv,N
+'Trivial Damage',golf,Malibu,4200,5400,'Parked Car',None,600,600,farming-fishing,N
+'Minor Damage',reading,95,38010,48870,'Multi-vehicle Collision',Fire,5430,5430,craft-repair,N
+'Minor Damage',reading,X5,3870,5590,'Vehicle Theft',Police,860,860,tech-support,N
+'Major Damage',camping,Corolla,48090,54960,'Multi-vehicle Collision',Other,0,6870,protective-serv,Y
+'Minor Damage',video-games,Wrangler,27860,39800,'Multi-vehicle Collision',Police,3980,7960,prof-specialty,N
+'Major Damage',chess,Fusion,43680,56160,'Multi-vehicle Collision',Ambulance,6240,6240,armed-forces,Y
+'Total Loss',golf,Corolla,36890,52700,'Single Vehicle Collision',Fire,10540,5270,priv-house-serv,N
+'Minor Damage',base-jumping,Wrangler,53340,68580,'Multi-vehicle Collision',Fire,7620,7620,sales,N
+'Major Damage',board-games,Jetta,58410,90860,'Single Vehicle Collision',Ambulance,19470,12980,craft-repair,Y
+'Trivial Damage',bungie-jumping,93,4560,5700,'Parked Car',Police,570,570,priv-house-serv,N
+'Total Loss',golf,RSX,77670,94930,'Multi-vehicle Collision',Police,8630,8630,prof-specialty,N
+'Major Damage',video-games,A5,32760,46800,'Single Vehicle Collision',Ambulance,9360,4680,farming-fishing,Y
+'Total Loss',polo,ML350,42240,56320,'Multi-vehicle Collision',Fire,7040,7040,exec-managerial,N
+'Minor Damage',chess,Pathfinder,60720,83490,'Single Vehicle Collision',Fire,15180,7590,handlers-cleaners,N
+'Total Loss',golf,95,46320,57900,'Multi-vehicle Collision',Police,5790,5790,machine-op-inspct,N
+'Total Loss',kayaking,A3,38430,49410,'Multi-vehicle Collision',Fire,5490,5490,armed-forces,N
+'Minor Damage',reading,Impreza,52960,66200,'Multi-vehicle Collision',Fire,6620,6620,tech-support,N
+'Minor Damage',reading,Camry,42720,64080,'Single Vehicle Collision',Fire,10680,10680,priv-house-serv,N
+'Minor Damage',dancing,Pathfinder,29750,42500,'Multi-vehicle Collision',Other,4250,8500,tech-support,N
+'Total Loss',bungie-jumping,Legacy,35600,48950,'Multi-vehicle Collision',Other,4450,8900,exec-managerial,N
+'Minor Damage',golf,MDX,37450,58850,'Multi-vehicle Collision',Other,10700,10700,adm-clerical,N
+'Minor Damage',golf,Pathfinder,65920,82400,'Multi-vehicle Collision',Other,8240,8240,other-service,N
+'Minor Damage',bungie-jumping,Impreza,40680,54240,'Single Vehicle Collision',Ambulance,6780,6780,other-service,N
+'Minor Damage',video-games,Wrangler,59360,74200,'Multi-vehicle Collision',Other,7420,7420,armed-forces,N
+'Total Loss',base-jumping,Camry,36890,47430,'Single Vehicle Collision',Fire,5270,5270,priv-house-serv,N
+'Major Damage',polo,RAM,47740,68200,'Single Vehicle Collision',Fire,6820,13640,priv-house-serv,Y
+'Minor Damage',exercise,TL,49700,63900,'Single Vehicle Collision',Fire,7100,7100,armed-forces,N
+'Total Loss',skydiving,RAM,41510,59300,'Multi-vehicle Collision',Ambulance,5930,11860,protective-serv,N
+'Minor Damage',chess,Forrestor,46830,66900,'Multi-vehicle Collision',Other,13380,6690,priv-house-serv,Y
+'Major Damage',skydiving,F150,29680,40810,'Multi-vehicle Collision',Police,7420,3710,farming-fishing,Y
+'Total Loss',skydiving,CRV,52780,75400,'Single Vehicle Collision',Fire,7540,15080,exec-managerial,N
+'Minor Damage',bungie-jumping,Wrangler,2940,4200,'Parked Car',None,840,420,prof-specialty,N
+'Major Damage',chess,F150,40950,52650,'Multi-vehicle Collision',Ambulance,5850,5850,machine-op-inspct,Y
+'Major Damage',kayaking,Malibu,26880,42240,'Single Vehicle Collision',Ambulance,7680,7680,armed-forces,N
+'Minor Damage',reading,ML350,46270,59490,'Single Vehicle Collision',Other,6610,6610,sales,N
+'Major Damage',base-jumping,Wrangler,35360,44200,'Single Vehicle Collision',Ambulance,4420,4420,tech-support,Y
+'Trivial Damage',reading,93,5390,7700,'Vehicle Theft',Police,1540,770,protective-serv,N
+'Total Loss',exercise,93,40960,61440,'Multi-vehicle Collision',Other,10240,10240,priv-house-serv,N
+'Major Damage',sleeping,Silverado,38080,54400,'Multi-vehicle Collision',Fire,10880,5440,handlers-cleaners,Y
+'Total Loss',polo,E400,39040,58560,'Single Vehicle Collision',Other,9760,9760,priv-house-serv,N
+'Major Damage',video-games,RAM,53840,67300,'Single Vehicle Collision',Fire,6730,6730,priv-house-serv,Y
+'Major Damage',skydiving,X5,26720,36740,'Single Vehicle Collision',Fire,6680,3340,farming-fishing,Y
+'Total Loss',dancing,'3 Series',54530,85690,'Single Vehicle Collision',Police,15580,15580,machine-op-inspct,N
+'Major Damage',bungie-jumping,A5,29890,34160,'Multi-vehicle Collision',Ambulance,4270,0,exec-managerial,Y
+'Minor Damage',paintball,M5,40880,61320,'Single Vehicle Collision',Fire,10220,10220,transport-moving,N
+'Total Loss',paintball,'3 Series',53120,79680,'Multi-vehicle Collision',Police,13280,13280,other-service,N
+'Total Loss',exercise,A3,48020,61740,'Single Vehicle Collision',Fire,6860,6860,craft-repair,N
+'Minor Damage',exercise,Civic,5120,6400,'Parked Car',None,640,640,armed-forces,N
+'Major Damage',chess,TL,42420,60600,'Single Vehicle Collision',Fire,6060,12120,other-service,N
+'Major Damage',sleeping,Jetta,40960,56320,'Multi-vehicle Collision',Ambulance,5120,10240,craft-repair,N
+'Total Loss',sleeping,Legacy,38000,52250,'Single Vehicle Collision',Ambulance,4750,9500,priv-house-serv,N
+'Total Loss',camping,95,37730,53900,'Multi-vehicle Collision',Other,10780,5390,exec-managerial,N
+'Trivial Damage',yachting,Wrangler,1980,2640,'Vehicle Theft',None,440,220,adm-clerical,N
+'Minor Damage',sleeping,Neon,6210,8970,'Vehicle Theft',None,1380,1380,transport-moving,N
+'Minor Damage',movies,Impreza,4000,6000,'Parked Car',None,1000,1000,priv-house-serv,N
+'Major Damage',board-games,92x,38640,55200,'Multi-vehicle Collision',Fire,5520,11040,armed-forces,Y
+'Trivial Damage',board-games,92x,5280,7260,'Parked Car',None,1320,660,exec-managerial,N
+'Minor Damage',sleeping,Wrangler,41160,64680,'Multi-vehicle Collision',Police,11760,11760,exec-managerial,N
+'Major Damage',basketball,Malibu,47360,59200,'Single Vehicle Collision',Police,11840,0,sales,N
+'Minor Damage',paintball,92x,3290,4700,'Vehicle Theft',None,940,470,craft-repair,N
+'Total Loss',video-games,C300,55520,69400,'Single Vehicle Collision',Other,6940,6940,sales,N
+'Total Loss',sleeping,Pathfinder,32400,40500,'Single Vehicle Collision',Police,4050,4050,exec-managerial,N
+'Minor Damage',skydiving,Accord,45000,60000,'Multi-vehicle Collision',Fire,10000,5000,handlers-cleaners,N
+'Minor Damage',basketball,Jetta,44880,67320,'Single Vehicle Collision',Other,11220,11220,armed-forces,N
+'Total Loss',movies,95,58870,75690,'Multi-vehicle Collision',Other,8410,8410,tech-support,N
+'Major Damage',paintball,Silverado,51440,64300,'Multi-vehicle Collision',Fire,6430,6430,adm-clerical,Y
+'Major Damage',camping,X5,51520,64400,'Multi-vehicle Collision',Police,6440,6440,priv-house-serv,N
+'Minor Damage',paintball,92x,64720,97080,'Multi-vehicle Collision',Fire,16180,16180,priv-house-serv,N
+'Minor Damage',base-jumping,Civic,4500,5500,'Vehicle Theft',Police,500,500,priv-house-serv,N
+'Total Loss',skydiving,Wrangler,21490,30700,'Multi-vehicle Collision',Other,6140,3070,transport-moving,N
+'Minor Damage',dancing,Pathfinder,26040,33480,'Single Vehicle Collision',Police,3720,3720,sales,N
+'Total Loss',kayaking,Wrangler,43620,65430,'Multi-vehicle Collision',Police,7270,14540,exec-managerial,N
+'Major Damage',kayaking,RSX,31040,42680,'Multi-vehicle Collision',Police,7760,3880,exec-managerial,Y
+'Minor Damage',movies,CRV,71820,87780,'Single Vehicle Collision',Fire,7980,7980,craft-repair,N
+'Major Damage',cross-fit,Accord,43680,72800,'Multi-vehicle Collision',Fire,14560,14560,transport-moving,N
+'Major Damage',chess,C300,63280,71190,'Single Vehicle Collision',Fire,7910,0,sales,Y
+'Trivial Damage',golf,Civic,2800,3600,'Vehicle Theft',None,400,400,adm-clerical,N
+'Major Damage',chess,C300,41760,62640,'Single Vehicle Collision',Other,10440,10440,tech-support,N
+'Minor Damage',exercise,Corolla,50640,69630,'Multi-vehicle Collision',Ambulance,6330,12660,prof-specialty,N
+'Minor Damage',chess,RAM,55280,76010,'Multi-vehicle Collision',Police,6910,13820,protective-serv,Y
+'Total Loss',base-jumping,MDX,32160,44220,'Single Vehicle Collision',Other,4020,8040,transport-moving,N
+'Minor Damage',camping,M5,41600,57200,'Multi-vehicle Collision',Other,10400,5200,other-service,N
+'Minor Damage',polo,Ultima,1960,3080,'Vehicle Theft',Police,560,560,priv-house-serv,N
+'Total Loss',hiking,RSX,55120,75790,'Single Vehicle Collision',Other,6890,13780,other-service,N
+'Minor Damage',skydiving,Accord,23760,32670,'Multi-vehicle Collision',Ambulance,2970,5940,farming-fishing,N
+'Minor Damage',video-games,Wrangler,2580,3870,'Vehicle Theft',Police,860,430,adm-clerical,N
+'Total Loss',video-games,X6,66560,91520,'Single Vehicle Collision',Fire,16640,8320,transport-moving,Y
+'Major Damage',bungie-jumping,RAM,54320,74690,'Single Vehicle Collision',Other,13580,6790,prof-specialty,Y
+'Trivial Damage',polo,A5,3360,4620,'Vehicle Theft',Police,840,420,priv-house-serv,N
+'Major Damage',yachting,Camry,35000,55000,'Single Vehicle Collision',Police,10000,10000,sales,Y
+'Major Damage',sleeping,93,39600,59400,'Multi-vehicle Collision',Police,6600,13200,adm-clerical,Y
+'Total Loss',sleeping,Ultima,49120,55260,'Multi-vehicle Collision',Fire,0,6140,sales,N
+'Minor Damage',polo,Civic,35980,51400,'Multi-vehicle Collision',Other,10280,5140,craft-repair,N
+'Minor Damage',reading,Neon,32520,48780,'Multi-vehicle Collision',Ambulance,10840,5420,machine-op-inspct,N
+'Major Damage',camping,Highlander,40740,52380,'Multi-vehicle Collision',Ambulance,5820,5820,armed-forces,N
+'Total Loss',cross-fit,Highlander,47320,74360,'Multi-vehicle Collision',Other,13520,13520,priv-house-serv,Y
+'Minor Damage',polo,CRV,42720,53400,'Single Vehicle Collision',Police,5340,5340,protective-serv,N
+'Total Loss',hiking,'Grand Cherokee',43080,71800,'Single Vehicle Collision',Police,14360,14360,protective-serv,N
+'Major Damage',exercise,Corolla,59710,68240,'Single Vehicle Collision',Other,0,8530,prof-specialty,Y
+'Major Damage',bungie-jumping,RAM,38850,61050,'Multi-vehicle Collision',Other,11100,11100,other-service,Y
+'Minor Damage',movies,Impreza,3870,5590,'Parked Car',None,860,860,craft-repair,N
+'Major Damage',exercise,Passat,29820,46860,'Multi-vehicle Collision',Fire,8520,8520,machine-op-inspct,N
+'Minor Damage',base-jumping,Passat,2730,4290,'Parked Car',None,780,780,other-service,N
+'Minor Damage',bungie-jumping,A3,54950,78500,'Multi-vehicle Collision',Police,7850,15700,armed-forces,N
+'Total Loss',movies,'Grand Cherokee',55090,70830,'Single Vehicle Collision',Police,7870,7870,prof-specialty,N
+'Total Loss',yachting,Forrestor,45360,68040,'Multi-vehicle Collision',Police,7560,15120,handlers-cleaners,N
+'Major Damage',hiking,A5,47700,63600,'Single Vehicle Collision',Fire,10600,5300,other-service,Y
+'Minor Damage',board-games,Legacy,33880,43560,'Single Vehicle Collision',Other,4840,4840,sales,N
+'Total Loss',exercise,Forrestor,40560,60840,'Single Vehicle Collision',Police,6760,13520,sales,N
+'Total Loss',bungie-jumping,Escape,45440,68160,'Multi-vehicle Collision',Police,11360,11360,tech-support,N
+'Minor Damage',video-games,Camry,3760,5170,'Parked Car',None,470,940,transport-moving,N
+'Total Loss',reading,Maxima,46160,57700,'Single Vehicle Collision',Ambulance,5770,5770,protective-serv,N
+'Total Loss',sleeping,A3,59680,89520,'Multi-vehicle Collision',Other,14920,14920,handlers-cleaners,N
+'Minor Damage',reading,Jetta,3360,4620,'Vehicle Theft',None,840,420,protective-serv,N
+'Minor Damage',yachting,CRV,35140,45180,'Single Vehicle Collision',Ambulance,5020,5020,craft-repair,N
+'Total Loss',movies,Maxima,31570,45100,'Single Vehicle Collision',Other,4510,9020,craft-repair,N
+'Total Loss',golf,Camry,52920,83160,'Multi-vehicle Collision',Police,15120,15120,machine-op-inspct,N
+'Minor Damage',skydiving,Silverado,54810,86130,'Single Vehicle Collision',Police,15660,15660,priv-house-serv,N
+'Major Damage',sleeping,RAM,33600,48000,'Multi-vehicle Collision',Fire,4800,9600,priv-house-serv,N
+'Minor Damage',movies,92x,2100,3300,'Vehicle Theft',Police,600,600,protective-serv,N
+'Minor Damage',board-games,Camry,40040,57200,'Multi-vehicle Collision',Ambulance,5720,11440,protective-serv,N
+'Trivial Damage',bungie-jumping,MDX,5520,7590,'Vehicle Theft',Police,690,1380,adm-clerical,N
+'Total Loss',board-games,Silverado,55440,80080,'Single Vehicle Collision',Police,12320,12320,transport-moving,N
+'Minor Damage',skydiving,'3 Series',3360,4800,'Vehicle Theft',Police,480,960,protective-serv,N
+'Minor Damage',cross-fit,Jetta,2730,3900,'Vehicle Theft',Police,780,390,craft-repair,Y
+'Minor Damage',camping,'3 Series',72320,90400,'Single Vehicle Collision',Other,9040,9040,handlers-cleaners,N
+'Minor Damage',kayaking,'Grand Cherokee',44030,62900,'Multi-vehicle Collision',Other,12580,6290,sales,N
+'Major Damage',base-jumping,Ultima,37940,54200,'Single Vehicle Collision',Police,10840,5420,protective-serv,Y
+'Major Damage',paintball,MDX,36260,51800,'Multi-vehicle Collision',Police,10360,5180,tech-support,N
+'Trivial Damage',movies,MDX,4800,6600,'Vehicle Theft',Police,1200,600,adm-clerical,N
+'Total Loss',movies,Escape,53920,74140,'Single Vehicle Collision',Fire,6740,13480,tech-support,N
+'Total Loss',paintball,C300,47460,67800,'Single Vehicle Collision',Fire,6780,13560,priv-house-serv,N
+'Major Damage',exercise,'Grand Cherokee',38780,55400,'Single Vehicle Collision',Fire,11080,5540,other-service,Y
+'Major Damage',reading,Impreza,34370,49100,'Single Vehicle Collision',Ambulance,4910,9820,tech-support,Y
+'Major Damage',video-games,Tahoe,75600,98280,'Multi-vehicle Collision',Police,7560,15120,transport-moving,Y
+'Total Loss',polo,Escape,48400,66550,'Multi-vehicle Collision',Fire,12100,6050,protective-serv,N
+'Major Damage',board-games,RSX,49280,70400,'Multi-vehicle Collision',Fire,7040,14080,craft-repair,N
+'Major Damage',board-games,Impreza,39960,53280,'Multi-vehicle Collision',Ambulance,8880,4440,adm-clerical,Y
+'Total Loss',golf,Neon,53830,84590,'Single Vehicle Collision',Other,15380,15380,craft-repair,N
+'Total Loss',base-jumping,95,34720,54560,'Single Vehicle Collision',Other,9920,9920,farming-fishing,N
+'Minor Damage',camping,Forrestor,67230,82170,'Single Vehicle Collision',Ambulance,7470,7470,handlers-cleaners,N
+'Total Loss',bungie-jumping,Neon,42770,61100,'Multi-vehicle Collision',Police,12220,6110,handlers-cleaners,N
+'Minor Damage',cross-fit,M5,36330,51900,'Multi-vehicle Collision',Police,10380,5190,exec-managerial,Y
+'Trivial Damage',hiking,Legacy,2580,3440,'Parked Car',Police,430,430,adm-clerical,N
+'Total Loss',cross-fit,Corolla,34260,51390,'Single Vehicle Collision',Ambulance,11420,5710,other-service,N
+'Major Damage',base-jumping,Wrangler,61520,76900,'Single Vehicle Collision',Other,7690,7690,other-service,N
+'Minor Damage',kayaking,Highlander,53900,77000,'Single Vehicle Collision',Other,7700,15400,handlers-cleaners,Y
+'Major Damage',yachting,Tahoe,41760,60320,'Single Vehicle Collision',Other,9280,9280,craft-repair,Y
+'Minor Damage',dancing,Civic,42490,60700,'Single Vehicle Collision',Fire,6070,12140,armed-forces,N
+'Total Loss',movies,Malibu,47360,53280,'Multi-vehicle Collision',Police,0,5920,exec-managerial,N
+'Minor Damage',movies,'Grand Cherokee',26670,34290,'Single Vehicle Collision',Fire,3810,3810,prof-specialty,N
+'Total Loss',basketball,TL,41760,46980,'Single Vehicle Collision',Other,5220,0,other-service,N
+'Major Damage',camping,Pathfinder,25690,36700,'Multi-vehicle Collision',Fire,7340,3670,exec-managerial,N
+'Total Loss',camping,Passat,48160,60200,'Multi-vehicle Collision',Other,6020,6020,exec-managerial,N
+'Minor Damage',bungie-jumping,Civic,4860,6480,'Parked Car',None,1080,540,sales,N
+'Minor Damage',paintball,Accord,61040,87200,'Single Vehicle Collision',Fire,8720,17440,craft-repair,N
+'Major Damage',sleeping,Passat,72320,108480,'Single Vehicle Collision',Fire,18080,18080,prof-specialty,N
+'Minor Damage',bungie-jumping,Impreza,52500,67500,'Multi-vehicle Collision',Police,7500,7500,armed-forces,N
+'Major Damage',base-jumping,A5,36540,46980,'Single Vehicle Collision',Other,5220,5220,handlers-cleaners,N
+'Minor Damage',kayaking,E400,3680,5060,'Parked Car',Police,920,460,sales,N
